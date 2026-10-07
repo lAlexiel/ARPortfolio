@@ -13,7 +13,7 @@
   ],
   "rates": {
     "headshot": {
-      "simple": 10,
+      "simple": 15,
       "full": 25,
       "background": 10
     },
