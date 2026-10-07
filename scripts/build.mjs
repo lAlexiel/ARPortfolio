@@ -47,6 +47,12 @@ const bundles = ['styles.css', 'views.css', 'themes.css', 'theme.js', 'paint.css
 const versions = Object.fromEntries(await Promise.all(bundles.map(async filename => [filename, hash(await readFile(path.join(root, filename)))])));
 versions['content-data.js'] = hash(generated);
 html = html.replace(/(src|href)="(styles\.css|views\.css|themes\.css|theme\.js|paint\.css|paint\.js|app\.js|windows\.js|dream\.css|dream\.js|content-data\.js)(?:\?[^\"]*)?"/g, (match, attribute, filename) => `${attribute}="${filename}?v=${versions[filename]}"`);
+// Replacing Home artwork at the same filename must also refresh cached images.
+for (const filename of ['assets/floral-portrait.jpg', 'assets/strawberry-portrait.jpg']) {
+  const version = hash(await readFile(path.join(root, filename)));
+  const escaped = filename.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  html = html.replace(new RegExp(`src="${escaped}(?:\\?[^\"]*)?"`, 'g'), `src="${filename}?v=${version}"`);
+}
 await mkdir(output, { recursive: true });
 if (output !== root) {
   for (const filename of bundles) await cp(path.join(root, filename), path.join(output, filename));
