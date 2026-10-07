@@ -659,12 +659,12 @@
   --tone-68d9ce: hsl(190.0 12.0% 62.9% / 1.000);
   --tone-3d2750: hsl(219.6 6.9% 23.3% / 1.000);
 }
-.palette-swatches button { flex: 1; min-width: 0; height: 28px; padding: 0; border: 1px solid #ffffff55; box-shadow: inset 0 2px 0 #ffffff44; cursor: pointer; background: #c795fa; }
+.palette-swatches button { flex: 1; min-width: 0; height: 19px; padding: 0; border: 1px solid #ffffff55; box-shadow: inset 0 2px 0 #ffffff44; cursor: pointer; background: #c795fa; }
 .palette-swatches button:nth-child(2) { background: #66eee0; }
 .palette-swatches button:nth-child(3) { background: #efa5cf; }
 .palette-swatches button:nth-child(4) { background: #efe5fa; }
 .palette-swatches button[aria-pressed="true"] { outline: 2px solid var(--ink); outline-offset: 2px; }
 .palette-swatches button:focus-visible { outline: 2px solid var(--aqua); outline-offset: 3px; }
-.mini-palette { width: 160px; }
+.mini-palette { width: 112px; }
 @media (min-width: 760px) and (max-width: 1319px) { .mini-palette { display: block; top: auto; bottom: -80px; right: 0; } }
-@media (max-width: 759px) { .floating-windows { flex-wrap: wrap; } .mini-palette { display: block; flex: 0 0 100%; order: 3; margin-top: 10px; transform: rotate(1deg); } .palette-swatches button { height: 44px; } }
+@media (max-width: 759px) { .floating-windows { flex-wrap: wrap; } .mini-palette { display: block; flex: 0 0 112px; order: 3; margin-top: 10px; transform: rotate(1deg); } }
