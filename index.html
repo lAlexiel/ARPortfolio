@@ -10,10 +10,12 @@
   <link rel="preload" href="assets/fonts/ArchivoBlack-Regular.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="styles.css?v=c299b3b66e98">
   <link rel="stylesheet" href="views.css?v=bd7c670cb80f">
-  <script src="content-data.js?v=81d6787d0e8c" defer></script>
+  <script src="content-data.js?v=bc080772ebdf" defer></script>
+  <link rel="stylesheet" href="paint.css?v=0fd489e0f307">
+  <script src="paint.js?v=592fb3a6b0c4" defer></script>
   <link rel="stylesheet" href="themes.css?v=8ac662101abb">
   <script src="theme.js?v=7e03a09ccfdb" defer></script>
-  <script src="app.js?v=9268e29dc5d8" defer></script>
+  <script src="app.js?v=902c53b90d46" defer></script>
   <script src="windows.js?v=242e7d0a03ce" defer></script>
 </head>
 <body>
@@ -127,14 +129,17 @@
           <figure class="art-window" data-draggable-window>
             <div class="window-title"><span><span class="window-icon" aria-hidden="true">✧</span> <span data-i18n="home.floralFile">floral_portrait.art</span></span><span class="window-controls" aria-hidden="true"><i>−</i><i>□</i><i>×</i></span></div>
             <div class="art-workspace">
-              <div class="tool-rail" aria-hidden="true">
-                <span class="selected-tool"><svg viewBox="0 0 24 24"><use href="#icon-cursor"/></svg></span>
-                <span><svg viewBox="0 0 24 24"><use href="#icon-pencil"/></svg></span>
-                <span><svg viewBox="0 0 24 24"><use href="#icon-brush"/></svg></span>
-                <span>✧</span><span>◇</span><span>◒</span><span>▱</span><span>▧</span>
-                <span class="rail-swatches"><i></i><i></i></span>
-              </div>
-              <div class="art-canvas"><img src="assets/floral-portrait.jpg" alt="Illustrated portrait framed by green foliage, red flowers, and a patterned white veil." data-i18n-alt="home.floralAlt" width="1280" height="1280" fetchpriority="high"></div>
+              <div class="tool-rail" role="group" aria-label="Mini Paint tools" data-i18n-aria-label="paint.tools">
+<button type="button" data-paint-tool="pointer" aria-label="pointer" data-i18n-aria-label="paint.pointer" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-cursor"/></svg></button>
+<button type="button" data-paint-tool="pencil" aria-label="pencil" data-i18n-aria-label="paint.pencil" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-pencil"/></svg></button>
+<button type="button" data-paint-tool="brush" aria-label="brush" data-i18n-aria-label="paint.brush" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-brush"/></svg></button>
+<button type="button" data-paint-tool="eraser" aria-label="eraser" data-i18n-aria-label="paint.eraser" aria-pressed="false">◇</button>
+<button id="paint-undo" type="button" aria-label="Undo drawing stroke" data-i18n-aria-label="paint.undo" disabled>↶</button>
+<button id="paint-clear" type="button" aria-label="Clear drawing" data-i18n-aria-label="paint.clear" disabled>×</button>
+<button id="paint-paper" type="button" aria-label="Toggle blank canvas" data-i18n-aria-label="paint.paper" aria-pressed="false">▱</button>
+<label class="paint-color"><input id="paint-color" type="color" value="#302038" aria-label="Drawing color" data-i18n-aria-label="paint.color"></label>
+</div>
+              <div class="art-canvas"><img src="assets/floral-portrait.jpg" alt="Illustrated portrait framed by green foliage, red flowers, and a patterned white veil." data-i18n-alt="home.floralAlt" width="1280" height="1280" fetchpriority="high"><canvas id="paint-canvas" width="1280" height="1280" aria-label="Mini Paint canvas: choose a pencil or brush to draw" data-i18n-aria-label="paint.canvas" aria-describedby="paint-help"></canvas></div>
             </div>
             <figcaption><span>ANGIE ROUGE</span><span aria-hidden="true" data-i18n="home.originalArt">✦ ORIGINAL ART</span></figcaption>
           </figure>
@@ -144,6 +149,7 @@
           </figure>
           <span class="stage-sparkle" aria-hidden="true">✦</span>
           <div class="stage-footer" aria-hidden="true"><span data-i18n="home.caption">MADE OF LINES &amp; DAYDREAMS</span><span>✧</span></div>
+          <p id="paint-help" class="sr-only" data-i18n="paint.help">Choose the pencil or brush, then draw with a mouse, finger, or pen. Your doodles stay in this visit only. Retry clears them.</p>
           <p id="window-move-help" class="sr-only" data-i18n="windows.help">Drag a title bar to move its window. With the title bar focused, use arrow keys to move, Shift for larger steps, and Escape to restore it.</p>
           </div>
           <div class="floating-windows">

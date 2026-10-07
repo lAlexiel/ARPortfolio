@@ -51,7 +51,7 @@ test('editable Terms accept plain text and emphasis, preserve both languages, an
 test('editing only terms.json updates the published HTML and bilingual runtime data on rebuild', () => {
   const temporary = fs.mkdtempSync(path.join(os.tmpdir(), 'angie-terms-build-'));
   try {
-    for (const name of ['scripts', 'content', 'assets', 'index.html', 'styles.css', 'views.css', 'themes.css', 'theme.js', 'app.js', 'windows.js']) {
+    for (const name of ['scripts', 'content', 'assets', 'index.html', 'styles.css', 'views.css', 'themes.css', 'theme.js', 'paint.css', 'paint.js', 'app.js', 'windows.js']) {
       fs.cpSync(new URL('../' + name, import.meta.url), path.join(temporary, name), { recursive: true });
     }
     const filename = path.join(temporary, 'content', 'terms.json');

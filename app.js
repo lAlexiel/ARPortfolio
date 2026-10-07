@@ -193,7 +193,9 @@
     });
     for (const attribute of ['aria-label', 'alt', 'content']) {
       document.querySelectorAll(`[data-i18n-${attribute}]`).forEach(element => {
-        element.setAttribute(attribute, t(element.getAttribute(`data-i18n-${attribute}`)));
+        const key = element.getAttribute(`data-i18n-${attribute}`);
+        element.setAttribute(attribute, t(key));
+        if (attribute === 'aria-label' && key.startsWith('paint.')) element.setAttribute('title', t(key));
       });
     }
     // Terms retain emphasis without interpreting translation text as HTML.
@@ -259,7 +261,7 @@
   }
 
   stage.addEventListener('pointermove', event => {
-    if (reducedMotion.matches || !finePointer.matches || document.hidden || document.body.classList.contains('is-window-dragging')) return;
+    if (reducedMotion.matches || !finePointer.matches || document.hidden || document.body.classList.contains('is-window-dragging') || document.body.classList.contains('is-painting')) return;
     const rect = stage.getBoundingClientRect();
     pointerX = Math.max(-1, Math.min(1, (event.clientX - rect.left) / rect.width * 2 - 1)) * 4;
     pointerY = Math.max(-1, Math.min(1, (event.clientY - rect.top) / rect.height * 2 - 1)) * 4;

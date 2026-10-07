@@ -133,7 +133,7 @@
     "gallery.defaultAlt": "{title} by Angie Rouge",
     "commissions.sample": "{category} · portfolio sample",
     "windows.help": "Drag a title bar to move its window. With the title bar focused, use arrow keys to move, Shift for larger steps, and Escape to restore it.",
-    "windows.retryLabel": "Reset Home window positions and website colors",
+    "windows.retryLabel": "Reset Home window positions, website colors, and doodles",
     "social.label": "Social links",
     "social.instagramLabel": "Open Instagram in a new tab",
     "social.xLabel": "Open X in a new tab",
@@ -145,7 +145,18 @@
     "palette.lavender": "Lavender theme",
     "palette.aqua": "Turquoise theme",
     "palette.pink": "Pink theme",
-    "palette.silver": "Silver theme"
+    "palette.silver": "Silver theme",
+    "paint.tools": "Mini Paint tools",
+    "paint.pointer": "Pointer: stop drawing",
+    "paint.pencil": "Draw with a pencil",
+    "paint.brush": "Draw with a brush",
+    "paint.eraser": "Erase doodles",
+    "paint.undo": "Undo drawing stroke",
+    "paint.clear": "Clear drawing",
+    "paint.paper": "Toggle blank canvas",
+    "paint.color": "Drawing color",
+    "paint.canvas": "Mini Paint canvas: choose a pencil or brush to draw",
+    "paint.help": "Choose the pencil or brush, then draw with a mouse, finger, or pen. Your doodles stay in this visit only. Retry clears them."
   },
   "es": {
     "site.description": "Angie Rouge — ilustración y arte de personajes. Bienvenido a mi espacio artístico.",
@@ -281,7 +292,7 @@
     "gallery.defaultAlt": "{title}, de Angie Rouge",
     "commissions.sample": "{category} · muestra del portafolio",
     "windows.help": "Arrastra la barra de t?tulo para mover su ventana. Con la barra de t?tulo enfocada, usa las flechas para moverla, May?s para pasos m?s grandes y Escape para devolverla a su lugar.",
-    "windows.retryLabel": "Restablecer las posiciones de las ventanas y los colores de la página",
+    "windows.retryLabel": "Restablecer las posiciones de las ventanas, los colores y los trazos",
     "social.label": "Redes sociales",
     "social.instagramLabel": "Abrir Instagram en una nueva pestaña",
     "social.xLabel": "Abrir X en una nueva pestaña",
@@ -293,6 +304,17 @@
     "palette.lavender": "Tema lavanda",
     "palette.aqua": "Tema turquesa",
     "palette.pink": "Tema rosa",
-    "palette.silver": "Tema plateado"
+    "palette.silver": "Tema plateado",
+    "paint.tools": "Herramientas de mini Paint",
+    "paint.pointer": "Puntero: dejar de dibujar",
+    "paint.pencil": "Dibujar con lápiz",
+    "paint.brush": "Dibujar con pincel",
+    "paint.eraser": "Borrar trazos",
+    "paint.undo": "Deshacer el último trazo",
+    "paint.clear": "Limpiar el dibujo",
+    "paint.paper": "Alternar lienzo en blanco",
+    "paint.color": "Color del dibujo",
+    "paint.canvas": "Lienzo de mini Paint: elige un lápiz o pincel para dibujar",
+    "paint.help": "Elige el lápiz o el pincel y dibuja con el ratón, el dedo o un lápiz digital. Tus trazos duran solo esta visita. Reintentar los borra."
   }
 }

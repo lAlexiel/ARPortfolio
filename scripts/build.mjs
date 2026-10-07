@@ -35,12 +35,12 @@ html = html.replace(exampleMarker, () => `<!-- EXAMPLES:START -->\n${samples.map
 html = html.replace(/(<span id="gallery-count"[^>]*>)[\s\S]*?(<\/span>)/, `$1${gallery.length} ${gallery.length === 1 ? 'work' : 'works'}$2`);
 const generated = JSON.stringify({ gallery, commissions, translations }).replace(/</g, '\\u003c').replace(/\u2028/g, '\\u2028').replace(/\u2029/g, '\\u2029');
 const hash = value => createHash('sha256').update(value).digest('hex').slice(0, 12);
-const versions = Object.fromEntries(await Promise.all(['styles.css', 'views.css', 'themes.css', 'theme.js', 'app.js', 'windows.js'].map(async filename => [filename, hash(await readFile(path.join(root, filename)))])));
+const versions = Object.fromEntries(await Promise.all(['styles.css', 'views.css', 'themes.css', 'theme.js', 'paint.css', 'paint.js', 'app.js', 'windows.js'].map(async filename => [filename, hash(await readFile(path.join(root, filename)))])));
 versions['content-data.js'] = hash(generated);
-html = html.replace(/(src|href)="(styles\.css|views\.css|themes\.css|theme\.js|app\.js|windows\.js|content-data\.js)(?:\?[^\"]*)?"/g, (match, attribute, filename) => `${attribute}="${filename}?v=${versions[filename]}"`);
+html = html.replace(/(src|href)="(styles\.css|views\.css|themes\.css|theme\.js|paint\.css|paint\.js|app\.js|windows\.js|content-data\.js)(?:\?[^\"]*)?"/g, (match, attribute, filename) => `${attribute}="${filename}?v=${versions[filename]}"`);
 await mkdir(output, { recursive: true });
 if (output !== root) {
-  for (const filename of ['styles.css', 'views.css', 'themes.css', 'theme.js', 'app.js', 'windows.js']) await cp(path.join(root, filename), path.join(output, filename));
+  for (const filename of ['styles.css', 'views.css', 'themes.css', 'theme.js', 'paint.css', 'paint.js', 'app.js', 'windows.js']) await cp(path.join(root, filename), path.join(output, filename));
   await cp(path.join(root, 'assets'), path.join(output, 'assets'), { recursive: true });
 }
 await writeFile(path.join(output, 'index.html'), html, 'utf8');

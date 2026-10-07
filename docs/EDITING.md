@@ -43,3 +43,7 @@ Saving a file only on your computer does not change the live website. If invalid
 ## Color themes
 
 The four swatches in Home's `color.art` window choose lavender, turquoise, pink, or silver. The choice applies to every tab and is remembered on that browser. Original artwork keeps its colors. **Retry** restores the lavender theme and all Home window positions.
+
+## Mini Paint
+
+Home's main artwork window includes a pencil, brush, eraser, undo, clear, a blank-paper toggle, and a drawing-color picker. Choose the pointer to stop drawing and scroll normally on a phone. Only the title bar moves the window. Doodles last for the current visit and never change the original artwork file. **Retry** also clears the doodles and restores the original picture.
