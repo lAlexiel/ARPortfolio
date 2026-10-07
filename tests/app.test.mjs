@@ -228,7 +228,8 @@ test('commission rates, contacts, and boundaries remain honest placeholders or r
   data.declinedSubjects = ['<script>plain text</script>'];
   const filled = fixture('#commissions', { commission: data });
   assert.equal(filled.nodes['rates-note'].hidden, true);
-  assert.ok(filled.rates.every(cell => cell.textContent === '€25.00'));
+  assert.ok(filled.rates.filter(cell => !cell.dataset.rate.endsWith('.background') && !cell.dataset.rate.startsWith('extras.')).every(cell => cell.textContent === '€25.00'));
+  assert.ok(filled.rates.filter(cell => cell.dataset.rate.endsWith('.background') || cell.dataset.rate.startsWith('extras.')).every(cell => cell.textContent === '+€25.00'));
   assert.equal(filled.nodes['commission-contacts'].children[0].href, data.contacts[0].url);
   assert.equal(filled.nodes['declined-subjects'].children[0].textContent, data.declinedSubjects[0]);
 });

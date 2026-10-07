@@ -20,6 +20,14 @@ const gallery = await buildGallery(root, metadata);
 let html = await readFile(path.join(root, 'index.html'), 'utf8');
 html = html.replace(/(<em data-i18n-rich="(terms\.[^"]+)">)[\s\S]*?(<\/em>)/g, (_, open, key, close) => open + renderRichText(translations.en[key]) + close);
 html = html.replace(/(<em data-i18n="(terms\.[^"]+)">)[\s\S]*?(<\/em>)/g, (_, open, key, close) => open + renderRichText([translations.en[key]]) + close);
+html = html.replace(/(<td data-rate="([\w.]+)"[^>]*>)[\s\S]*?(<\/td>)/g, (_, open, rate, close) => {
+  const [group, key] = rate.split('.');
+  const value = commissions.rates[group][key];
+  const label = value === null || value === '' ? translations.en['commissions.unconfirmed']
+    : typeof value === 'number' ? `${key === 'background' || group === 'extras' ? '+' : ''}${new Intl.NumberFormat('en-US', { style: 'currency', currency: commissions.currency }).format(value)}`
+    : typeof value === 'string' ? value : value.en;
+  return open + renderRichText([label]) + close;
+});
 const socialMarker = /<!-- SOCIAL:START -->[\s\S]*?<!-- SOCIAL:END -->/g;
 if ([...html.matchAll(socialMarker)].length !== 2) throw Error('Home and Commission Info social button markers are missing');
 html = html.replace(socialMarker, () => `<!-- SOCIAL:START -->\n${renderSocialButtons(commissions.socialLinks)}\n              <!-- SOCIAL:END -->`);

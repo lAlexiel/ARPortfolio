@@ -1,14 +1,43 @@
 {
-  "currency": "",
+  "currency": "USD",
   "contacts": [],
-  "socialLinks": { "instagram": "https://www.instagram.com/r.ougx/", "x": "https://x.com/AngieReygadas", "paypal": null },
-  "examples": ["01-floral-portrait.jpeg", "04-green-haired-character.jpeg", "03-bunny-character.jpeg"],
+  "socialLinks": {
+    "instagram": "https://www.instagram.com/r.ougx/",
+    "x": "https://x.com/AngieReygadas",
+    "paypal": null
+  },
+  "examples": [
+    "01-floral-portrait.jpeg",
+    "04-green-haired-character.jpeg",
+    "03-bunny-character.jpeg"
+  ],
   "rates": {
-    "headshot": { "simple": null, "full": null, "background": null },
-    "halfBody": { "simple": null, "full": null, "background": null },
-    "fullBody": { "simple": null, "full": null, "background": null },
-    "background": { "simple": null, "full": null },
-    "extras": { "additionalCharacter": null, "detailedBackground": null }
+    "headshot": {
+      "simple": 10,
+      "full": 25,
+      "background": 10
+    },
+    "halfBody": {
+      "simple": 25,
+      "full": 40,
+      "background": 15
+    },
+    "fullBody": {
+      "simple": 40,
+      "full": 60,
+      "background": 20
+    },
+    "background": {
+      "simple": 10,
+      "full": 30
+    },
+    "extras": {
+      "additionalCharacter": {
+        "en": "50% of the character price (minimum $10)",
+        "es": "50% del precio del personaje (mínimo US$10)"
+      },
+      "detailedBackground": 30
+    }
   },
   "acceptedSubjects": [],
   "declinedSubjects": []

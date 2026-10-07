@@ -82,13 +82,13 @@
     "commissions.fullBodyPrices": "Full-body prices",
     "commissions.backgroundFile": "backgrounds.art",
     "commissions.backgrounds": "Backgrounds",
-    "commissions.backgroundDescription": "A setting to make the illustration's world feel complete.",
+    "commissions.backgroundDescription": "Standalone backgrounds: simple scenery or a more detailed setting. Choose one background option for your illustration; background fees are not stacked.",
     "commissions.backgroundPrices": "Standalone background prices",
     "commissions.extraHeading": "A little extra",
     "commissions.extras": "Commission extras",
     "commissions.additionalCharacter": "Additional character",
     "commissions.detailedBackground": "Detailed background",
-    "commissions.extraDescription": "Multiple-character requests and background complexity can be discussed when you get in touch. Revisions after a completed piece are priced separately.",
+    "commissions.extraDescription": "Each extra character costs 50% of the selected framing and shading price, with a $10 minimum. A detailed background replaces the basic background add-on. Revisions after a completed piece are quoted separately.",
     "commissions.closerLook": "A closer look",
     "commissions.examplesNumber": "02 / Portfolio examples",
     "commissions.examplesDescription": "A few drawings from the portfolio. Specific examples for each framing and shading tier will be added here.",
@@ -156,7 +156,8 @@
     "paint.paper": "Toggle blank canvas",
     "paint.color": "Drawing color",
     "paint.canvas": "Mini Paint canvas: choose a pencil or brush to draw",
-    "paint.help": "Choose the pencil or brush, then draw with a mouse, finger, or pen. Your doodles stay in this visit only. Retry clears them."
+    "paint.help": "Choose the pencil or brush, then draw with a mouse, finger, or pen. Your doodles stay in this visit only. Retry clears them.",
+    "commissions.pricingNote": "Base prices in US dollars, per character. Backgrounds and extra characters are charged separately. The final quote is agreed before work begins."
   },
   "es": {
     "site.description": "Angie Rouge — ilustración y arte de personajes. Bienvenido a mi espacio artístico.",
@@ -241,13 +242,13 @@
     "commissions.fullBodyPrices": "Precios de cuerpo completo",
     "commissions.backgroundFile": "fondos.art",
     "commissions.backgrounds": "Fondos",
-    "commissions.backgroundDescription": "Un escenario que complete el mundo de la ilustración.",
+    "commissions.backgroundDescription": "Fondos independientes: un escenario sencillo o más detallado. Elige una opción de fondo para tu ilustración; las tarifas de fondo no se acumulan.",
     "commissions.backgroundPrices": "Precios de fondos independientes",
     "commissions.extraHeading": "Un pequeño extra",
     "commissions.extras": "Extras de comisiones",
     "commissions.additionalCharacter": "Personaje adicional",
     "commissions.detailedBackground": "Fondo detallado",
-    "commissions.extraDescription": "Al contactarme, podemos hablar de solicitudes con varios personajes y de la complejidad del fondo. Las revisiones de una obra terminada se cobran por separado.",
+    "commissions.extraDescription": "Cada personaje adicional cuesta el 50% del precio del encuadre y sombreado elegido, con un mínimo de US$10. Un fondo detallado sustituye el fondo adicional básico. Las revisiones de una pieza terminada se cotizan aparte.",
     "commissions.closerLook": "Una mirada más cercana",
     "commissions.examplesNumber": "02 / Ejemplos del portafolio",
     "commissions.examplesDescription": "Algunos dibujos del portafolio. Aquí se agregarán ejemplos específicos de cada encuadre y nivel de sombreado.",
@@ -315,6 +316,7 @@
     "paint.paper": "Alternar lienzo en blanco",
     "paint.color": "Color del dibujo",
     "paint.canvas": "Lienzo de mini Paint: elige un lápiz o pincel para dibujar",
-    "paint.help": "Elige el lápiz o el pincel y dibuja con el ratón, el dedo o un lápiz digital. Tus trazos duran solo esta visita. Reintentar los borra."
+    "paint.help": "Elige el lápiz o el pincel y dibuja con el ratón, el dedo o un lápiz digital. Tus trazos duran solo esta visita. Reintentar los borra.",
+    "commissions.pricingNote": "Precios base en dólares estadounidenses, por personaje. Los fondos y personajes adicionales se cobran aparte. El presupuesto final se acuerda antes de comenzar."
   }
 }

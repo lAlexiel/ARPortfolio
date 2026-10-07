@@ -157,6 +157,7 @@
       cell.textContent = missing ? t('commissions.unconfirmed') : typeof value === 'number'
         ? new Intl.NumberFormat(language === 'es' ? 'es-MX' : 'en-US', { style: 'currency', currency: commission.currency }).format(value)
         : localized(value);
+      if (!missing && typeof value === 'number' && (key === 'background' || group === 'extras')) cell.textContent = `+${cell.textContent}`;
       cell.classList.toggle('is-unconfirmed', missing);
     });
     document.getElementById('rates-note').hidden = !incompleteRates;
