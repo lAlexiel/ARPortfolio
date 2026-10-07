@@ -18,7 +18,7 @@
     "home.explore": "Explore my art space",
     "home.littleWorld": "A little world of my own",
     "home.stageHeading": "ART / CHARACTERS / DAYDREAMS",
-    "home.disc": "ANGIE ROUGE · ART SPACE",
+    "home.disc": "Tipling Rock · Staring",
     "home.floralFile": "floral_portrait.art",
     "home.portraitFile": "portrait.art",
     "home.originalArt": "✦ ORIGINAL ART",
@@ -160,7 +160,11 @@
     "commissions.pricingNote": "Base prices in US dollars, per character. Backgrounds and extra characters are charged separately. The final quote is agreed before work begins.",
     "gallery.monochrome": "Ink & monochrome",
     "gallery.sketches": "Sketches & line art",
-    "gallery.posters": "Posters & graphic art"
+    "gallery.posters": "Posters & graphic art",
+    "dream.label": "Start a short daydream animation",
+    "dream.message": "Reality is optional.",
+    "dream.started": "Dream mode. Press Escape or Retry to return.",
+    "dream.finished": "Back to your art space."
   },
   "es": {
     "site.description": "Angie Rouge — ilustración y arte de personajes. Bienvenido a mi espacio artístico.",
@@ -181,7 +185,7 @@
     "home.explore": "Explora mi espacio artístico",
     "home.littleWorld": "Un pequeño mundo propio",
     "home.stageHeading": "ARTE / PERSONAJES / ENSUEÑOS",
-    "home.disc": "ANGIE ROUGE · ESPACIO ARTÍSTICO",
+    "home.disc": "Tipling Rock · Staring",
     "home.floralFile": "retrato_floral.art",
     "home.portraitFile": "retrato.art",
     "home.originalArt": "✦ ARTE ORIGINAL",
@@ -323,6 +327,10 @@
     "commissions.pricingNote": "Precios base en dólares estadounidenses, por personaje. Los fondos y personajes adicionales se cobran aparte. El presupuesto final se acuerda antes de comenzar.",
     "gallery.monochrome": "Tinta y monocromo",
     "gallery.sketches": "Bocetos y arte lineal",
-    "gallery.posters": "Pósters y arte gráfico"
+    "gallery.posters": "Pósters y arte gráfico",
+    "dream.label": "Iniciar una breve animación de ensueño",
+    "dream.message": "La realidad es opcional.",
+    "dream.started": "Modo ensueño. Pulsa Escape o Reintentar para volver.",
+    "dream.finished": "De vuelta a tu espacio artístico."
   }
 }

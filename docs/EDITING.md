@@ -48,3 +48,7 @@ The four swatches in Home's `color.art` window choose lavender, turquoise, pink,
 ## Mini Paint
 
 Home's main artwork window includes a pencil, brush, eraser, undo, clear, a blank-paper toggle, and a drawing-color picker. Choose the pointer to stop drawing and scroll normally on a phone. Only the title bar moves the window. Doodles last for the current visit and never change the original artwork file. **Retry** also clears the doodles and restores the original picture.
+
+## Dream
+
+**Dream** plays a 5.6-second Y2K animation and then restores the normal Home view, preserving your window positions, selected theme, and doodles. **Retry** or **Escape** ends it immediately. Browsers with reduced motion enabled get a calmer version. Only the lettering on the spinning CD opens the hidden YouTube link; its appearance stays the same.

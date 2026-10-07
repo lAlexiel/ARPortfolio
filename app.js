@@ -262,7 +262,7 @@
   }
 
   stage.addEventListener('pointermove', event => {
-    if (reducedMotion.matches || !finePointer.matches || document.hidden || document.body.classList.contains('is-window-dragging') || document.body.classList.contains('is-painting')) return;
+    if (reducedMotion.matches || !finePointer.matches || document.hidden || document.body.classList.contains('is-window-dragging') || document.body.classList.contains('is-painting') || document.body.classList.contains('is-dreaming')) return;
     const rect = stage.getBoundingClientRect();
     pointerX = Math.max(-1, Math.min(1, (event.clientX - rect.left) / rect.width * 2 - 1)) * 4;
     pointerY = Math.max(-1, Math.min(1, (event.clientY - rect.top) / rect.height * 2 - 1)) * 4;

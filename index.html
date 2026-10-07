@@ -8,15 +8,17 @@
   <title data-i18n="site.title">Angie Rouge — Illustrator</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/ArchivoBlack-Regular.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=c299b3b66e98">
+  <link rel="stylesheet" href="styles.css?v=4c9afb59ea32">
   <link rel="stylesheet" href="views.css?v=bd7c670cb80f">
-  <script src="content-data.js?v=ca67178f61f7" defer></script>
+  <script src="content-data.js?v=1579b7296f83" defer></script>
   <link rel="stylesheet" href="paint.css?v=0fd489e0f307">
   <script src="paint.js?v=592fb3a6b0c4" defer></script>
   <link rel="stylesheet" href="themes.css?v=8ac662101abb">
   <script src="theme.js?v=7e03a09ccfdb" defer></script>
-  <script src="app.js?v=4c99e23a1ff3" defer></script>
+  <script src="app.js?v=2bad91b538dc" defer></script>
   <script src="windows.js?v=242e7d0a03ce" defer></script>
+  <link rel="stylesheet" href="dream.css?v=0df6d477b290">
+  <script src="dream.js?v=70fc1f67cfd8" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main" data-i18n="site.skip">Skip to content</a>
@@ -122,7 +124,7 @@
         <div class="art-stage">
           <div class="art-composition">
           <div class="stage-heading" aria-hidden="true"><span data-i18n="home.stageHeading">ART / CHARACTERS / DAYDREAMS</span><span>✦ ✧</span></div>
-          <div class="disc" aria-hidden="true"><span data-i18n="home.disc">ANGIE ROUGE · ART SPACE</span></div>
+          <div class="disc"><span><a class="disc-link" href="https://www.youtube.com/watch?v=RXpe-kbDJE8" target="_blank" rel="noopener noreferrer" data-i18n="home.disc">Tipling Rock · Staring</a></span></div>
           <div class="dot-field" aria-hidden="true"></div>
           <span class="stage-star star-one" aria-hidden="true">✦</span>
           <span class="stage-star star-two" aria-hidden="true">✧</span>
@@ -150,6 +152,7 @@
           <span class="stage-sparkle" aria-hidden="true">✦</span>
           <div class="stage-footer" aria-hidden="true"><span data-i18n="home.caption">MADE OF LINES &amp; DAYDREAMS</span><span>✧</span></div>
           <p id="paint-help" class="sr-only" data-i18n="paint.help">Choose the pencil or brush, then draw with a mouse, finger, or pen. Your doodles stay in this visit only. Retry clears them.</p>
+          <p id="dream-status" class="sr-only" role="status" aria-live="polite"></p>
           <p id="window-move-help" class="sr-only" data-i18n="windows.help">Drag a title bar to move its window. With the title bar focused, use arrow keys to move, Shift for larger steps, and Escape to restore it.</p>
           </div>
           <div class="floating-windows">
@@ -164,7 +167,7 @@
                   <svg class="error-symbol" viewBox="0 0 26 25"><path d="M13 2 25 23H1Z"/><path d="M13 9v6m0 3v1"/></svg>
                   <span><strong data-i18n="home.reality">Reality not found.</strong><small data-i18n="home.tryDreaming">Try daydreaming instead.</small></span>
                 </div>
-                <div class="error-actions"><button id="retry-windows" type="button" data-i18n="home.retry" aria-label="Reset Home window positions" data-i18n-aria-label="windows.retryLabel" disabled>RETRY</button><span data-i18n="home.dream" aria-hidden="true">DREAM ♡</span></div>
+                <div class="error-actions"><button id="retry-windows" type="button" data-i18n="home.retry" aria-label="Reset Home window positions" data-i18n-aria-label="windows.retryLabel" disabled>RETRY</button><button id="dream-button" type="button" data-i18n="home.dream" aria-label="Start a short daydream animation" data-i18n-aria-label="dream.label" aria-pressed="false" disabled>DREAM ♡</button></div>
               </div>
             </div>
             <div class="mini-window mini-welcome" data-draggable-window>
