@@ -45,8 +45,8 @@
     "gallery.file": "gallery.art",
     "gallery.filterLabel": "Filter gallery",
     "gallery.all": "All works",
-    "gallery.illustrations": "Illustrations",
-    "gallery.portraits": "Portraits",
+    "gallery.illustrations": "Character illustrations",
+    "gallery.portraits": "Color portraits",
     "gallery.empty": "No artwork in this collection yet.",
     "gallery.original": "Original artwork by Angie Rouge",
     "gallery.enlargeHint": "Click a drawing to enlarge ↗",
@@ -157,7 +157,10 @@
     "paint.color": "Drawing color",
     "paint.canvas": "Mini Paint canvas: choose a pencil or brush to draw",
     "paint.help": "Choose the pencil or brush, then draw with a mouse, finger, or pen. Your doodles stay in this visit only. Retry clears them.",
-    "commissions.pricingNote": "Base prices in US dollars, per character. Backgrounds and extra characters are charged separately. The final quote is agreed before work begins."
+    "commissions.pricingNote": "Base prices in US dollars, per character. Backgrounds and extra characters are charged separately. The final quote is agreed before work begins.",
+    "gallery.monochrome": "Ink & monochrome",
+    "gallery.sketches": "Sketches & line art",
+    "gallery.posters": "Posters & graphic art"
   },
   "es": {
     "site.description": "Angie Rouge — ilustración y arte de personajes. Bienvenido a mi espacio artístico.",
@@ -205,8 +208,8 @@
     "gallery.file": "galería.art",
     "gallery.filterLabel": "Filtrar galería",
     "gallery.all": "Todas las obras",
-    "gallery.illustrations": "Ilustraciones",
-    "gallery.portraits": "Retratos",
+    "gallery.illustrations": "Ilustraciones de personajes",
+    "gallery.portraits": "Retratos a color",
     "gallery.empty": "Todavía no hay obras en esta colección.",
     "gallery.original": "Obras originales de Angie Rouge",
     "gallery.enlargeHint": "Haz clic en un dibujo para ampliarlo ↗",
@@ -317,6 +320,9 @@
     "paint.color": "Color del dibujo",
     "paint.canvas": "Lienzo de mini Paint: elige un lápiz o pincel para dibujar",
     "paint.help": "Elige el lápiz o el pincel y dibuja con el ratón, el dedo o un lápiz digital. Tus trazos duran solo esta visita. Reintentar los borra.",
-    "commissions.pricingNote": "Precios base en dólares estadounidenses, por personaje. Los fondos y personajes adicionales se cobran aparte. El presupuesto final se acuerda antes de comenzar."
+    "commissions.pricingNote": "Precios base en dólares estadounidenses, por personaje. Los fondos y personajes adicionales se cobran aparte. El presupuesto final se acuerda antes de comenzar.",
+    "gallery.monochrome": "Tinta y monocromo",
+    "gallery.sketches": "Bocetos y arte lineal",
+    "gallery.posters": "Pósters y arte gráfico"
   }
 }

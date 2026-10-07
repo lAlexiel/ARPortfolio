@@ -42,12 +42,19 @@ export async function buildGallery(root, metadata = {}) {
   return Promise.all(filenames.map(async filename => {
     const custom = Object.hasOwn(metadata, filename) ? metadata[filename] : {};
     if (!custom || typeof custom !== 'object' || Array.isArray(custom)) throw Error(`Invalid gallery metadata for ${filename}`);
-    for (const field of ['title', 'alt', 'titleEs', 'altEs', 'category']) if (custom[field] !== undefined && typeof custom[field] !== 'string') throw Error(`Invalid ${field} for ${filename}`);
+    for (const field of ['title', 'alt', 'titleEs', 'altEs', 'category', 'thumbnail']) if (custom[field] !== undefined && typeof custom[field] !== 'string') throw Error(`Invalid ${field} for ${filename}`);
     const number = filename.match(/^\d+/)[0];
     const title = custom.title || `Artwork ${number}`;
-    const category = ['Portraits', 'Illustrations'].includes(custom.category) ? custom.category : 'Illustrations';
+    const category = ['Portraits', 'Illustrations', 'Monochrome', 'Sketches', 'Posters'].includes(custom.category) ? custom.category : 'Illustrations';
     const titleEs = custom.titleEs || custom.title || `Obra ${number}`;
-    return { src: `assets/gallery/${encodeURIComponent(filename)}`, title, titleEs, alt: custom.alt || `${title} by Angie Rouge`, altEs: custom.altEs || custom.alt || `${titleEs}, de Angie Rouge`, category, number, ...dimensions(await readFile(path.join(directory, filename))) };
+    const src = `assets/gallery/${encodeURIComponent(filename)}`;
+    let thumbnail = src;
+    if (custom.thumbnail) {
+      if (path.basename(custom.thumbnail) !== custom.thumbnail || /[\\/]/.test(custom.thumbnail) || !/\.(png|jpe?g|gif|webp|avif)$/i.test(custom.thumbnail)) throw Error(`Invalid thumbnail for ${filename}; use an image filename from assets/gallery/thumbnails`);
+      await readFile(path.join(directory, 'thumbnails', custom.thumbnail));
+      thumbnail = `assets/gallery/thumbnails/${encodeURIComponent(custom.thumbnail)}`;
+    }
+    return { src, thumbnail, title, titleEs, alt: custom.alt || `${title} by Angie Rouge`, altEs: custom.altEs || custom.alt || `${titleEs}, de Angie Rouge`, category, number, ...dimensions(await readFile(path.join(directory, filename))) };
   }));
 }
 
@@ -140,7 +147,7 @@ export function renderGalleryCard(work) {
   return `            <figure class="artwork-card" data-category="${work.category.toLowerCase()}">
               <a class="artwork-link" href="${src}" data-artwork="${src}" aria-label="Enlarge ${escapeHtml(work.title)}">
                 <span class="artwork-file"><span data-artwork-file="${src}">${escapeHtml(work.number)} / ${escapeHtml(work.title)}</span><span aria-hidden="true">↗</span></span>
-                <span class="artwork-thumbnail"><img src="${src}" data-artwork-alt="${src}" alt="${escapeHtml(work.alt)}"${size} loading="lazy" decoding="async"></span>
+                <span class="artwork-thumbnail"><img src="${escapeHtml(work.thumbnail || work.src)}" data-artwork-alt="${src}" alt="${escapeHtml(work.alt)}"${size} loading="lazy" decoding="async"></span>
               </a>
               <figcaption><h2 data-artwork-title="${src}">${escapeHtml(work.title)}</h2><span data-artwork-category="${src}">${escapeHtml(work.category)}</span></figcaption>
             </figure>`;
@@ -149,5 +156,5 @@ export function renderGalleryCard(work) {
 export function renderCommissionExample(work) {
   const src = escapeHtml(work.src);
   const size = work.width && work.height ? ` width="${work.width}" height="${work.height}"` : '';
-  return `          <figure><a href="${src}" data-artwork="${src}" aria-label="Enlarge ${escapeHtml(work.title)}"><img src="${src}" data-artwork-alt="${src}" alt="${escapeHtml(work.alt)}"${size} loading="lazy"><span aria-hidden="true">↗</span></a><figcaption><strong data-artwork-title="${src}">${escapeHtml(work.title)}</strong> <span data-artwork-sample="${src}">${escapeHtml(work.category)} · portfolio sample</span></figcaption></figure>`;
+  return `          <figure><a href="${src}" data-artwork="${src}" aria-label="Enlarge ${escapeHtml(work.title)}"><img src="${escapeHtml(work.thumbnail || work.src)}" data-artwork-alt="${src}" alt="${escapeHtml(work.alt)}"${size} loading="lazy"><span aria-hidden="true">↗</span></a><figcaption><strong data-artwork-title="${src}">${escapeHtml(work.title)}</strong> <span data-artwork-sample="${src}">${escapeHtml(work.category)} · portfolio sample</span></figcaption></figure>`;
 }

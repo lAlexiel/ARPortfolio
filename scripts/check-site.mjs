@@ -30,7 +30,7 @@ validateTranslations(content.translations);
 for (const [, key] of html.matchAll(/\bdata-i18n(?:-rich|-aria-label|-alt|-content)?="([^"]+)"/g)) {
   if (!Object.hasOwn(content.translations.en, key) || !Object.hasOwn(content.translations.es, key)) throw Error(`Missing translation: ${key}`);
 }
-await Promise.all(content.gallery.map(work => checkAsset(work.src)));
+await Promise.all(content.gallery.flatMap(work => [checkAsset(work.src), checkAsset(work.thumbnail || work.src)]));
 if ([...html.matchAll(/class="artwork-card"/g)].length !== content.gallery.length) throw Error('Gallery cards and generated data differ');
 const stack = [];
 const voids = new Set(['area','base','br','col','embed','hr','img','input','link','meta','param','source','track','wbr']);

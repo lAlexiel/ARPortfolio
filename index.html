@@ -10,7 +10,7 @@
   <link rel="preload" href="assets/fonts/ArchivoBlack-Regular.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="styles.css?v=c299b3b66e98">
   <link rel="stylesheet" href="views.css?v=bd7c670cb80f">
-  <script src="content-data.js?v=62e1da0af9ea" defer></script>
+  <script src="content-data.js?v=ca67178f61f7" defer></script>
   <link rel="stylesheet" href="paint.css?v=0fd489e0f307">
   <script src="paint.js?v=592fb3a6b0c4" defer></script>
   <link rel="stylesheet" href="themes.css?v=8ac662101abb">
@@ -193,61 +193,239 @@
           <div class="archive-toolbar">
             <div id="gallery-filters" class="filter-buttons" role="group" aria-label="Filter gallery" data-i18n-aria-label="gallery.filterLabel" hidden>
               <button type="button" data-filter="all" aria-pressed="true" data-i18n="gallery.all">All works</button>
-              <button type="button" data-filter="illustrations" aria-pressed="false" data-i18n="gallery.illustrations">Illustrations</button>
-              <button type="button" data-filter="portraits" aria-pressed="false" data-i18n="gallery.portraits">Portraits</button>
+              <button type="button" data-filter="portraits" aria-pressed="false" data-i18n="gallery.portraits">Color portraits</button>
+              <button type="button" data-filter="illustrations" aria-pressed="false" data-i18n="gallery.illustrations">Character illustrations</button>
+              <button type="button" data-filter="monochrome" aria-pressed="false" data-i18n="gallery.monochrome">Ink &amp; monochrome</button>
+              <button type="button" data-filter="sketches" aria-pressed="false" data-i18n="gallery.sketches">Sketches &amp; line art</button>
+              <button type="button" data-filter="posters" aria-pressed="false" data-i18n="gallery.posters">Posters &amp; graphic art</button>
             </div>
-            <span id="gallery-count" class="archive-count" role="status" aria-live="polite">7 works</span>
+            <span id="gallery-count" class="archive-count" role="status" aria-live="polite">32 works</span>
           </div>
           <div id="gallery-grid" class="gallery-grid">
             <!-- GALLERY:START -->
             <figure class="artwork-card" data-category="portraits">
               <a class="artwork-link" href="assets/gallery/01-floral-portrait.jpeg" data-artwork="assets/gallery/01-floral-portrait.jpeg" aria-label="Enlarge Floral portrait">
                 <span class="artwork-file"><span data-artwork-file="assets/gallery/01-floral-portrait.jpeg">01 / Floral portrait</span><span aria-hidden="true">↗</span></span>
-                <span class="artwork-thumbnail"><img src="assets/gallery/01-floral-portrait.jpeg" data-artwork-alt="assets/gallery/01-floral-portrait.jpeg" alt="A character&#39;s face framed by red flowers, green foliage, and a patterned white veil." width="1280" height="1280" loading="lazy" decoding="async"></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/01-floral-portrait.jpeg" data-artwork-alt="assets/gallery/01-floral-portrait.jpeg" alt="A character&#39;s face framed by red flowers, green foliage, and a patterned white veil." width="1280" height="1280" loading="lazy" decoding="async"></span>
               </a>
               <figcaption><h2 data-artwork-title="assets/gallery/01-floral-portrait.jpeg">Floral portrait</h2><span data-artwork-category="assets/gallery/01-floral-portrait.jpeg">Portraits</span></figcaption>
             </figure>
             <figure class="artwork-card" data-category="portraits">
               <a class="artwork-link" href="assets/gallery/02-strawberry-portrait.jpeg" data-artwork="assets/gallery/02-strawberry-portrait.jpeg" aria-label="Enlarge Strawberry daydream">
                 <span class="artwork-file"><span data-artwork-file="assets/gallery/02-strawberry-portrait.jpeg">02 / Strawberry daydream</span><span aria-hidden="true">↗</span></span>
-                <span class="artwork-thumbnail"><img src="assets/gallery/02-strawberry-portrait.jpeg" data-artwork-alt="assets/gallery/02-strawberry-portrait.jpeg" alt="A blonde character with a pink star, blue nose bandage, and a strawberry." width="1600" height="1600" loading="lazy" decoding="async"></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/02-strawberry-portrait.jpeg" data-artwork-alt="assets/gallery/02-strawberry-portrait.jpeg" alt="A blonde portrait with a strawberry, pink star, blue nose bandage and a blue chain-patterned background." width="1757" height="2600" loading="lazy" decoding="async"></span>
               </a>
               <figcaption><h2 data-artwork-title="assets/gallery/02-strawberry-portrait.jpeg">Strawberry daydream</h2><span data-artwork-category="assets/gallery/02-strawberry-portrait.jpeg">Portraits</span></figcaption>
             </figure>
             <figure class="artwork-card" data-category="illustrations">
               <a class="artwork-link" href="assets/gallery/03-bunny-character.jpeg" data-artwork="assets/gallery/03-bunny-character.jpeg" aria-label="Enlarge Pink-haired character">
                 <span class="artwork-file"><span data-artwork-file="assets/gallery/03-bunny-character.jpeg">03 / Pink-haired character</span><span aria-hidden="true">↗</span></span>
-                <span class="artwork-thumbnail"><img src="assets/gallery/03-bunny-character.jpeg" data-artwork-alt="assets/gallery/03-bunny-character.jpeg" alt="A pink-haired character wearing black bunny ears, black gloves, and a red outfit." width="1130" height="1600" loading="lazy" decoding="async"></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/03-bunny-character.jpeg" data-artwork-alt="assets/gallery/03-bunny-character.jpeg" alt="A pink-haired character with bunny ears, black gloves and a glossy red outfit against red curtains." width="1950" height="2600" loading="lazy" decoding="async"></span>
               </a>
               <figcaption><h2 data-artwork-title="assets/gallery/03-bunny-character.jpeg">Pink-haired character</h2><span data-artwork-category="assets/gallery/03-bunny-character.jpeg">Illustrations</span></figcaption>
             </figure>
             <figure class="artwork-card" data-category="illustrations">
               <a class="artwork-link" href="assets/gallery/04-green-haired-character.jpeg" data-artwork="assets/gallery/04-green-haired-character.jpeg" aria-label="Enlarge Green-haired character">
                 <span class="artwork-file"><span data-artwork-file="assets/gallery/04-green-haired-character.jpeg">04 / Green-haired character</span><span aria-hidden="true">↗</span></span>
-                <span class="artwork-thumbnail"><img src="assets/gallery/04-green-haired-character.jpeg" data-artwork-alt="assets/gallery/04-green-haired-character.jpeg" alt="A green-haired character with purple bat-wing accessories and white feathers on a black outfit." width="740" height="1600" loading="lazy" decoding="async"></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/04-green-haired-character.jpeg" data-artwork-alt="assets/gallery/04-green-haired-character.jpeg" alt="A green-haired character with purple bat-wing accessories and feather trim, beside a blurred portrait background." width="1950" height="2600" loading="lazy" decoding="async"></span>
               </a>
               <figcaption><h2 data-artwork-title="assets/gallery/04-green-haired-character.jpeg">Green-haired character</h2><span data-artwork-category="assets/gallery/04-green-haired-character.jpeg">Illustrations</span></figcaption>
             </figure>
             <figure class="artwork-card" data-category="illustrations">
               <a class="artwork-link" href="assets/gallery/05-ruffled-character.jpeg" data-artwork="assets/gallery/05-ruffled-character.jpeg" aria-label="Enlarge Ruffles &amp; ribbons">
                 <span class="artwork-file"><span data-artwork-file="assets/gallery/05-ruffled-character.jpeg">05 / Ruffles &amp; ribbons</span><span aria-hidden="true">↗</span></span>
-                <span class="artwork-thumbnail"><img src="assets/gallery/05-ruffled-character.jpeg" data-artwork-alt="assets/gallery/05-ruffled-character.jpeg" alt="A character with dark burgundy hair, a ruffled bonnet, pink ribbons, and patterned white stockings." width="740" height="1600" loading="lazy" decoding="async"></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/05-ruffled-character.jpeg" data-artwork-alt="assets/gallery/05-ruffled-character.jpeg" alt="A seated character with burgundy hair, a ruffled bonnet, pink ribbons and white stockings on a lace-patterned background." width="1950" height="2600" loading="lazy" decoding="async"></span>
               </a>
               <figcaption><h2 data-artwork-title="assets/gallery/05-ruffled-character.jpeg">Ruffles &amp; ribbons</h2><span data-artwork-category="assets/gallery/05-ruffled-character.jpeg">Illustrations</span></figcaption>
             </figure>
-            <figure class="artwork-card" data-category="portraits">
-              <a class="artwork-link" href="assets/gallery/06-blonde-portrait.png" data-artwork="assets/gallery/06-blonde-portrait.png" aria-label="Enlarge Chrome &amp; blue ribbons">
-                <span class="artwork-file"><span data-artwork-file="assets/gallery/06-blonde-portrait.png">06 / Chrome &amp; blue ribbons</span><span aria-hidden="true">↗</span></span>
-                <span class="artwork-thumbnail"><img src="assets/gallery/06-blonde-portrait.png" data-artwork-alt="assets/gallery/06-blonde-portrait.png" alt="A blonde character with blue eyes, blue ribbons, and a metallic spiked collar in the artist&#39;s original black portrait composition." width="981" height="1139" loading="lazy" decoding="async"></span>
+            <figure class="artwork-card" data-category="illustrations">
+              <a class="artwork-link" href="assets/gallery/06-blonde-portrait.jpeg" data-artwork="assets/gallery/06-blonde-portrait.jpeg" aria-label="Enlarge Chrome &amp; blue ribbons">
+                <span class="artwork-file"><span data-artwork-file="assets/gallery/06-blonde-portrait.jpeg">06 / Chrome &amp; blue ribbons</span><span aria-hidden="true">↗</span></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/06-blonde-portrait.jpeg" data-artwork-alt="assets/gallery/06-blonde-portrait.jpeg" alt="A blonde character with blue ribbons, a metallic spiked collar and a pale blue outfit against a blue diamond pattern." width="1950" height="2600" loading="lazy" decoding="async"></span>
               </a>
-              <figcaption><h2 data-artwork-title="assets/gallery/06-blonde-portrait.png">Chrome &amp; blue ribbons</h2><span data-artwork-category="assets/gallery/06-blonde-portrait.png">Portraits</span></figcaption>
+              <figcaption><h2 data-artwork-title="assets/gallery/06-blonde-portrait.jpeg">Chrome &amp; blue ribbons</h2><span data-artwork-category="assets/gallery/06-blonde-portrait.jpeg">Illustrations</span></figcaption>
+            </figure>
+            <figure class="artwork-card" data-category="illustrations">
+              <a class="artwork-link" href="assets/gallery/07-cat-portrait.jpeg" data-artwork="assets/gallery/07-cat-portrait.jpeg" aria-label="Enlarge Cat-inspired portrait">
+                <span class="artwork-file"><span data-artwork-file="assets/gallery/07-cat-portrait.jpeg">07 / Cat-inspired portrait</span><span aria-hidden="true">↗</span></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/07-cat-portrait.jpeg" data-artwork-alt="assets/gallery/07-cat-portrait.jpeg" alt="A character in a glossy black cat costume and orange goggles, holding a purple jewel in a dark brick passage." width="1950" height="2600" loading="lazy" decoding="async"></span>
+              </a>
+              <figcaption><h2 data-artwork-title="assets/gallery/07-cat-portrait.jpeg">Cat-inspired portrait</h2><span data-artwork-category="assets/gallery/07-cat-portrait.jpeg">Illustrations</span></figcaption>
+            </figure>
+            <figure class="artwork-card" data-category="illustrations">
+              <a class="artwork-link" href="assets/gallery/08-vampirella-character.jpeg" data-artwork="assets/gallery/08-vampirella-character.jpeg" aria-label="Enlarge Gothic light">
+                <span class="artwork-file"><span data-artwork-file="assets/gallery/08-vampirella-character.jpeg">08 / Gothic light</span><span aria-hidden="true">↗</span></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/08-vampirella-character.jpeg" data-artwork-alt="assets/gallery/08-vampirella-character.jpeg" alt="A black-haired character in a red and white outfit, posed before tall illuminated gothic windows." width="1950" height="2600" loading="lazy" decoding="async"></span>
+              </a>
+              <figcaption><h2 data-artwork-title="assets/gallery/08-vampirella-character.jpeg">Gothic light</h2><span data-artwork-category="assets/gallery/08-vampirella-character.jpeg">Illustrations</span></figcaption>
             </figure>
             <figure class="artwork-card" data-category="portraits">
-              <a class="artwork-link" href="assets/gallery/07-cat-portrait.png" data-artwork="assets/gallery/07-cat-portrait.png" aria-label="Enlarge Cat-inspired portrait">
-                <span class="artwork-file"><span data-artwork-file="assets/gallery/07-cat-portrait.png">07 / Cat-inspired portrait</span><span aria-hidden="true">↗</span></span>
-                <span class="artwork-thumbnail"><img src="assets/gallery/07-cat-portrait.png" data-artwork-alt="assets/gallery/07-cat-portrait.png" alt="A character in a glossy black cat-inspired costume with orange goggles, holding a small purple jewel." width="955" height="1044" loading="lazy" decoding="async"></span>
+              <a class="artwork-link" href="assets/gallery/09-magenta-portrait.jpeg" data-artwork="assets/gallery/09-magenta-portrait.jpeg" aria-label="Enlarge Magenta hearts">
+                <span class="artwork-file"><span data-artwork-file="assets/gallery/09-magenta-portrait.jpeg">09 / Magenta hearts</span><span aria-hidden="true">↗</span></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/09-magenta-portrait.jpeg" data-artwork-alt="assets/gallery/09-magenta-portrait.jpeg" alt="A dark-haired portrait with magenta highlights, purple hearts and curved pink graphic accents." width="2048" height="2048" loading="lazy" decoding="async"></span>
               </a>
-              <figcaption><h2 data-artwork-title="assets/gallery/07-cat-portrait.png">Cat-inspired portrait</h2><span data-artwork-category="assets/gallery/07-cat-portrait.png">Portraits</span></figcaption>
+              <figcaption><h2 data-artwork-title="assets/gallery/09-magenta-portrait.jpeg">Magenta hearts</h2><span data-artwork-category="assets/gallery/09-magenta-portrait.jpeg">Portraits</span></figcaption>
+            </figure>
+            <figure class="artwork-card" data-category="portraits">
+              <a class="artwork-link" href="assets/gallery/10-curly-haired-portrait.jpeg" data-artwork="assets/gallery/10-curly-haired-portrait.jpeg" aria-label="Enlarge Lilac daydream">
+                <span class="artwork-file"><span data-artwork-file="assets/gallery/10-curly-haired-portrait.jpeg">10 / Lilac daydream</span><span aria-hidden="true">↗</span></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/10-curly-haired-portrait.jpeg" data-artwork-alt="assets/gallery/10-curly-haired-portrait.jpeg" alt="A curly-haired portrait with purple hearts and butterflies on a lilac background with green and purple ribbons." width="1838" height="2600" loading="lazy" decoding="async"></span>
+              </a>
+              <figcaption><h2 data-artwork-title="assets/gallery/10-curly-haired-portrait.jpeg">Lilac daydream</h2><span data-artwork-category="assets/gallery/10-curly-haired-portrait.jpeg">Portraits</span></figcaption>
+            </figure>
+            <figure class="artwork-card" data-category="portraits">
+              <a class="artwork-link" href="assets/gallery/11-cherry-portrait.jpeg" data-artwork="assets/gallery/11-cherry-portrait.jpeg" aria-label="Enlarge Cherry checkers">
+                <span class="artwork-file"><span data-artwork-file="assets/gallery/11-cherry-portrait.jpeg">11 / Cherry checkers</span><span aria-hidden="true">↗</span></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/11-cherry-portrait.jpeg" data-artwork-alt="assets/gallery/11-cherry-portrait.jpeg" alt="An expressive brown-haired portrait with face decorations and cherries against red, black and cream diamonds." width="1757" height="2600" loading="lazy" decoding="async"></span>
+              </a>
+              <figcaption><h2 data-artwork-title="assets/gallery/11-cherry-portrait.jpeg">Cherry checkers</h2><span data-artwork-category="assets/gallery/11-cherry-portrait.jpeg">Portraits</span></figcaption>
+            </figure>
+            <figure class="artwork-card" data-category="portraits">
+              <a class="artwork-link" href="assets/gallery/12-candy-portrait.jpeg" data-artwork="assets/gallery/12-candy-portrait.jpeg" aria-label="Enlarge Sweet violet">
+                <span class="artwork-file"><span data-artwork-file="assets/gallery/12-candy-portrait.jpeg">12 / Sweet violet</span><span aria-hidden="true">↗</span></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/12-candy-portrait.jpeg" data-artwork-alt="assets/gallery/12-candy-portrait.jpeg" alt="A black-haired character with glasses and candy against a purple heart-lollipop pattern." width="1757" height="2600" loading="lazy" decoding="async"></span>
+              </a>
+              <figcaption><h2 data-artwork-title="assets/gallery/12-candy-portrait.jpeg">Sweet violet</h2><span data-artwork-category="assets/gallery/12-candy-portrait.jpeg">Portraits</span></figcaption>
+            </figure>
+            <figure class="artwork-card" data-category="monochrome">
+              <a class="artwork-link" href="assets/gallery/13-dark-fantasy-ink.jpeg" data-artwork="assets/gallery/13-dark-fantasy-ink.jpeg" aria-label="Enlarge Dark fantasy">
+                <span class="artwork-file"><span data-artwork-file="assets/gallery/13-dark-fantasy-ink.jpeg">13 / Dark fantasy</span><span aria-hidden="true">↗</span></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/13-dark-fantasy-ink.jpeg" data-artwork-alt="assets/gallery/13-dark-fantasy-ink.jpeg" alt="A surreal ink character with raised arms, layered chains and bat-like wings." width="1618" height="2600" loading="lazy" decoding="async"></span>
+              </a>
+              <figcaption><h2 data-artwork-title="assets/gallery/13-dark-fantasy-ink.jpeg">Dark fantasy</h2><span data-artwork-category="assets/gallery/13-dark-fantasy-ink.jpeg">Monochrome</span></figcaption>
+            </figure>
+            <figure class="artwork-card" data-category="monochrome">
+              <a class="artwork-link" href="assets/gallery/14-charcoal-portrait.jpeg" data-artwork="assets/gallery/14-charcoal-portrait.jpeg" aria-label="Enlarge Charcoal gaze">
+                <span class="artwork-file"><span data-artwork-file="assets/gallery/14-charcoal-portrait.jpeg">14 / Charcoal gaze</span><span aria-hidden="true">↗</span></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/14-charcoal-portrait.jpeg" data-artwork-alt="assets/gallery/14-charcoal-portrait.jpeg" alt="A close-up monochrome portrait with dark hair, soft shading and a direct gaze." width="1217" height="1493" loading="lazy" decoding="async"></span>
+              </a>
+              <figcaption><h2 data-artwork-title="assets/gallery/14-charcoal-portrait.jpeg">Charcoal gaze</h2><span data-artwork-category="assets/gallery/14-charcoal-portrait.jpeg">Monochrome</span></figcaption>
+            </figure>
+            <figure class="artwork-card" data-category="monochrome">
+              <a class="artwork-link" href="assets/gallery/15-monochrome-character-duo.jpeg" data-artwork="assets/gallery/15-monochrome-character-duo.jpeg" aria-label="Enlarge Mirrored poses">
+                <span class="artwork-file"><span data-artwork-file="assets/gallery/15-monochrome-character-duo.jpeg">15 / Mirrored poses</span><span aria-hidden="true">↗</span></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/15-monochrome-character-duo.jpeg" data-artwork-alt="assets/gallery/15-monochrome-character-duo.jpeg" alt="Two shaded monochrome characters arranged in opposing upright and inverted poses." width="1739" height="2600" loading="lazy" decoding="async"></span>
+              </a>
+              <figcaption><h2 data-artwork-title="assets/gallery/15-monochrome-character-duo.jpeg">Mirrored poses</h2><span data-artwork-category="assets/gallery/15-monochrome-character-duo.jpeg">Monochrome</span></figcaption>
+            </figure>
+            <figure class="artwork-card" data-category="monochrome">
+              <a class="artwork-link" href="assets/gallery/16-nana-microphone.jpeg" data-artwork="assets/gallery/16-nana-microphone.jpeg" aria-label="Enlarge Nana · microphone">
+                <span class="artwork-file"><span data-artwork-file="assets/gallery/16-nana-microphone.jpeg">16 / Nana · microphone</span><span aria-hidden="true">↗</span></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/16-nana-microphone.jpeg" data-artwork-alt="assets/gallery/16-nana-microphone.jpeg" alt="A framed black-and-white portrait of Nana holding a microphone, with red lips and nails." width="2134" height="2600" loading="lazy" decoding="async"></span>
+              </a>
+              <figcaption><h2 data-artwork-title="assets/gallery/16-nana-microphone.jpeg">Nana · microphone</h2><span data-artwork-category="assets/gallery/16-nana-microphone.jpeg">Monochrome</span></figcaption>
+            </figure>
+            <figure class="artwork-card" data-category="monochrome">
+              <a class="artwork-link" href="assets/gallery/17-nana-heart.jpeg" data-artwork="assets/gallery/17-nana-heart.jpeg" aria-label="Enlarge Nana · heart">
+                <span class="artwork-file"><span data-artwork-file="assets/gallery/17-nana-heart.jpeg">17 / Nana · heart</span><span aria-hidden="true">↗</span></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/17-nana-heart.jpeg" data-artwork-alt="assets/gallery/17-nana-heart.jpeg" alt="A black-and-white portrait of Nana inside a heart outline with red lips and pink blush." width="1904" height="1752" loading="lazy" decoding="async"></span>
+              </a>
+              <figcaption><h2 data-artwork-title="assets/gallery/17-nana-heart.jpeg">Nana · heart</h2><span data-artwork-category="assets/gallery/17-nana-heart.jpeg">Monochrome</span></figcaption>
+            </figure>
+            <figure class="artwork-card" data-category="monochrome">
+              <a class="artwork-link" href="assets/gallery/18-tomie-tears.jpeg" data-artwork="assets/gallery/18-tomie-tears.jpeg" aria-label="Enlarge Tomie · tears">
+                <span class="artwork-file"><span data-artwork-file="assets/gallery/18-tomie-tears.jpeg">18 / Tomie · tears</span><span aria-hidden="true">↗</span></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/18-tomie-tears.jpeg" data-artwork-alt="assets/gallery/18-tomie-tears.jpeg" alt="A close-up ink portrait with straight dark bangs, detailed eyes and tears." width="2213" height="2600" loading="lazy" decoding="async"></span>
+              </a>
+              <figcaption><h2 data-artwork-title="assets/gallery/18-tomie-tears.jpeg">Tomie · tears</h2><span data-artwork-category="assets/gallery/18-tomie-tears.jpeg">Monochrome</span></figcaption>
+            </figure>
+            <figure class="artwork-card" data-category="monochrome">
+              <a class="artwork-link" href="assets/gallery/19-tomie-side-portrait.jpeg" data-artwork="assets/gallery/19-tomie-side-portrait.jpeg" aria-label="Enlarge Tomie · sideways glance">
+                <span class="artwork-file"><span data-artwork-file="assets/gallery/19-tomie-side-portrait.jpeg">19 / Tomie · sideways glance</span><span aria-hidden="true">↗</span></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/19-tomie-side-portrait.jpeg" data-artwork-alt="assets/gallery/19-tomie-side-portrait.jpeg" alt="A monochrome face with side-swept hair, long lashes and a sideways glance." width="2371" height="2600" loading="lazy" decoding="async"></span>
+              </a>
+              <figcaption><h2 data-artwork-title="assets/gallery/19-tomie-side-portrait.jpeg">Tomie · sideways glance</h2><span data-artwork-category="assets/gallery/19-tomie-side-portrait.jpeg">Monochrome</span></figcaption>
+            </figure>
+            <figure class="artwork-card" data-category="monochrome">
+              <a class="artwork-link" href="assets/gallery/20-tomie-framed-portrait.jpeg" data-artwork="assets/gallery/20-tomie-framed-portrait.jpeg" aria-label="Enlarge Tomie · framed portrait">
+                <span class="artwork-file"><span data-artwork-file="assets/gallery/20-tomie-framed-portrait.jpeg">20 / Tomie · framed portrait</span><span aria-hidden="true">↗</span></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/20-tomie-framed-portrait.jpeg" data-artwork-alt="assets/gallery/20-tomie-framed-portrait.jpeg" alt="A framed ink portrait with long dark hair, straight bangs and a three-quarter pose." width="2340" height="2600" loading="lazy" decoding="async"></span>
+              </a>
+              <figcaption><h2 data-artwork-title="assets/gallery/20-tomie-framed-portrait.jpeg">Tomie · framed portrait</h2><span data-artwork-category="assets/gallery/20-tomie-framed-portrait.jpeg">Monochrome</span></figcaption>
+            </figure>
+            <figure class="artwork-card" data-category="monochrome">
+              <a class="artwork-link" href="assets/gallery/21-rose-and-thorns.jpeg" data-artwork="assets/gallery/21-rose-and-thorns.jpeg" aria-label="Enlarge Rose &amp; thorns">
+                <span class="artwork-file"><span data-artwork-file="assets/gallery/21-rose-and-thorns.jpeg">21 / Rose &amp; thorns</span><span aria-hidden="true">↗</span></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/21-rose-and-thorns.jpeg" data-artwork-alt="assets/gallery/21-rose-and-thorns.jpeg" alt="A small detailed monochrome portrait with a rose, thorn-like accents and a surreal doubled eye." width="1950" height="2600" loading="lazy" decoding="async"></span>
+              </a>
+              <figcaption><h2 data-artwork-title="assets/gallery/21-rose-and-thorns.jpeg">Rose &amp; thorns</h2><span data-artwork-category="assets/gallery/21-rose-and-thorns.jpeg">Monochrome</span></figcaption>
+            </figure>
+            <figure class="artwork-card" data-category="monochrome">
+              <a class="artwork-link" href="assets/gallery/22-monochrome-hands.jpeg" data-artwork="assets/gallery/22-monochrome-hands.jpeg" aria-label="Enlarge Ink-stained daydream">
+                <span class="artwork-file"><span data-artwork-file="assets/gallery/22-monochrome-hands.jpeg">22 / Ink-stained daydream</span><span aria-hidden="true">↗</span></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/22-monochrome-hands.jpeg" data-artwork-alt="assets/gallery/22-monochrome-hands.jpeg" alt="A tall monochrome portrait with dark nails, hands, long hair and tear-like marks." width="1950" height="2600" loading="lazy" decoding="async"></span>
+              </a>
+              <figcaption><h2 data-artwork-title="assets/gallery/22-monochrome-hands.jpeg">Ink-stained daydream</h2><span data-artwork-category="assets/gallery/22-monochrome-hands.jpeg">Monochrome</span></figcaption>
+            </figure>
+            <figure class="artwork-card" data-category="monochrome">
+              <a class="artwork-link" href="assets/gallery/23-dark-red-portrait.jpeg" data-artwork="assets/gallery/23-dark-red-portrait.jpeg" aria-label="Enlarge Crimson stare">
+                <span class="artwork-file"><span data-artwork-file="assets/gallery/23-dark-red-portrait.jpeg">23 / Crimson stare</span><span aria-hidden="true">↗</span></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/23-dark-red-portrait.jpeg" data-artwork-alt="assets/gallery/23-dark-red-portrait.jpeg" alt="A dark portrait with straight bangs, red accents and hands held beneath the face." width="2600" height="2600" loading="lazy" decoding="async"></span>
+              </a>
+              <figcaption><h2 data-artwork-title="assets/gallery/23-dark-red-portrait.jpeg">Crimson stare</h2><span data-artwork-category="assets/gallery/23-dark-red-portrait.jpeg">Monochrome</span></figcaption>
+            </figure>
+            <figure class="artwork-card" data-category="monochrome">
+              <a class="artwork-link" href="assets/gallery/24-skull.jpeg" data-artwork="assets/gallery/24-skull.jpeg" aria-label="Enlarge Skull">
+                <span class="artwork-file"><span data-artwork-file="assets/gallery/24-skull.jpeg">24 / Skull</span><span aria-hidden="true">↗</span></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/24-skull.jpeg" data-artwork-alt="assets/gallery/24-skull.jpeg" alt="A detailed monochrome skull drawing with an open jaw and one stylized eye." width="1950" height="2600" loading="lazy" decoding="async"></span>
+              </a>
+              <figcaption><h2 data-artwork-title="assets/gallery/24-skull.jpeg">Skull</h2><span data-artwork-category="assets/gallery/24-skull.jpeg">Monochrome</span></figcaption>
+            </figure>
+            <figure class="artwork-card" data-category="sketches">
+              <a class="artwork-link" href="assets/gallery/25-bat-wing-line-art.jpeg" data-artwork="assets/gallery/25-bat-wing-line-art.jpeg" aria-label="Enlarge Bat-wing study">
+                <span class="artwork-file"><span data-artwork-file="assets/gallery/25-bat-wing-line-art.jpeg">25 / Bat-wing study</span><span aria-hidden="true">↗</span></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/25-bat-wing-line-art.jpeg" data-artwork-alt="assets/gallery/25-bat-wing-line-art.jpeg" alt="A clean line-art head with layered hair, bat-wing accessories and floating eye motifs." width="1838" height="2600" loading="lazy" decoding="async"></span>
+              </a>
+              <figcaption><h2 data-artwork-title="assets/gallery/25-bat-wing-line-art.jpeg">Bat-wing study</h2><span data-artwork-category="assets/gallery/25-bat-wing-line-art.jpeg">Sketches</span></figcaption>
+            </figure>
+            <figure class="artwork-card" data-category="sketches">
+              <a class="artwork-link" href="assets/gallery/26-horned-character-line-art.jpeg" data-artwork="assets/gallery/26-horned-character-line-art.jpeg" aria-label="Enlarge Horned character study">
+                <span class="artwork-file"><span data-artwork-file="assets/gallery/26-horned-character-line-art.jpeg">26 / Horned character study</span><span aria-hidden="true">↗</span></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/26-horned-character-line-art.jpeg" data-artwork-alt="assets/gallery/26-horned-character-line-art.jpeg" alt="A line-art character with horns, layered accessories and one raised hand." width="1395" height="2600" loading="lazy" decoding="async"></span>
+              </a>
+              <figcaption><h2 data-artwork-title="assets/gallery/26-horned-character-line-art.jpeg">Horned character study</h2><span data-artwork-category="assets/gallery/26-horned-character-line-art.jpeg">Sketches</span></figcaption>
+            </figure>
+            <figure class="artwork-card" data-category="sketches">
+              <a class="artwork-link" href="assets/gallery/27-character-pencil-study.jpeg" data-artwork="assets/gallery/27-character-pencil-study.jpeg" aria-label="Enlarge Character pencil study">
+                <span class="artwork-file"><span data-artwork-file="assets/gallery/27-character-pencil-study.jpeg">27 / Character pencil study</span><span aria-hidden="true">↗</span></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/27-character-pencil-study.jpeg" data-artwork-alt="assets/gallery/27-character-pencil-study.jpeg" alt="A light pencil character study with long hair, a jacket and a tilted pose." width="1661" height="2600" loading="lazy" decoding="async"></span>
+              </a>
+              <figcaption><h2 data-artwork-title="assets/gallery/27-character-pencil-study.jpeg">Character pencil study</h2><span data-artwork-category="assets/gallery/27-character-pencil-study.jpeg">Sketches</span></figcaption>
+            </figure>
+            <figure class="artwork-card" data-category="sketches">
+              <a class="artwork-link" href="assets/gallery/28-bunny-line-art.jpeg" data-artwork="assets/gallery/28-bunny-line-art.jpeg" aria-label="Enlarge Bunny line art">
+                <span class="artwork-file"><span data-artwork-file="assets/gallery/28-bunny-line-art.jpeg">28 / Bunny line art</span><span aria-hidden="true">↗</span></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/28-bunny-line-art.jpeg" data-artwork-alt="assets/gallery/28-bunny-line-art.jpeg" alt="A seated bunny character in clean line art with long ears, a crown and patterned stockings." width="1557" height="2115" loading="lazy" decoding="async"></span>
+              </a>
+              <figcaption><h2 data-artwork-title="assets/gallery/28-bunny-line-art.jpeg">Bunny line art</h2><span data-artwork-category="assets/gallery/28-bunny-line-art.jpeg">Sketches</span></figcaption>
+            </figure>
+            <figure class="artwork-card" data-category="sketches">
+              <a class="artwork-link" href="assets/gallery/29-ruffled-portrait-study.jpeg" data-artwork="assets/gallery/29-ruffled-portrait-study.jpeg" aria-label="Enlarge Ruffled portrait study">
+                <span class="artwork-file"><span data-artwork-file="assets/gallery/29-ruffled-portrait-study.jpeg">29 / Ruffled portrait study</span><span aria-hidden="true">↗</span></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/29-ruffled-portrait-study.jpeg" data-artwork-alt="assets/gallery/29-ruffled-portrait-study.jpeg" alt="A hatched pencil portrait with a ruffled bonnet, long dark hair and a ribbon collar." width="1682" height="2600" loading="lazy" decoding="async"></span>
+              </a>
+              <figcaption><h2 data-artwork-title="assets/gallery/29-ruffled-portrait-study.jpeg">Ruffled portrait study</h2><span data-artwork-category="assets/gallery/29-ruffled-portrait-study.jpeg">Sketches</span></figcaption>
+            </figure>
+            <figure class="artwork-card" data-category="sketches">
+              <a class="artwork-link" href="assets/gallery/30-pencil-portrait-study.jpeg" data-artwork="assets/gallery/30-pencil-portrait-study.jpeg" aria-label="Enlarge Pencil portrait study">
+                <span class="artwork-file"><span data-artwork-file="assets/gallery/30-pencil-portrait-study.jpeg">30 / Pencil portrait study</span><span aria-hidden="true">↗</span></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/30-pencil-portrait-study.jpeg" data-artwork-alt="assets/gallery/30-pencil-portrait-study.jpeg" alt="A crosshatched pencil face with detailed eyes and a hand crossing the nose." width="1694" height="1781" loading="lazy" decoding="async"></span>
+              </a>
+              <figcaption><h2 data-artwork-title="assets/gallery/30-pencil-portrait-study.jpeg">Pencil portrait study</h2><span data-artwork-category="assets/gallery/30-pencil-portrait-study.jpeg">Sketches</span></figcaption>
+            </figure>
+            <figure class="artwork-card" data-category="posters">
+              <a class="artwork-link" href="assets/gallery/31-manga-panel-poster.jpeg" data-artwork="assets/gallery/31-manga-panel-poster.jpeg" aria-label="Enlarge Manga in red">
+                <span class="artwork-file"><span data-artwork-file="assets/gallery/31-manga-panel-poster.jpeg">31 / Manga in red</span><span aria-hidden="true">↗</span></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/31-manga-panel-poster.jpeg" data-artwork-alt="assets/gallery/31-manga-panel-poster.jpeg" alt="Three manga-style character panels with red accents over a textured gray background." width="1972" height="2600" loading="lazy" decoding="async"></span>
+              </a>
+              <figcaption><h2 data-artwork-title="assets/gallery/31-manga-panel-poster.jpeg">Manga in red</h2><span data-artwork-category="assets/gallery/31-manga-panel-poster.jpeg">Posters</span></figcaption>
+            </figure>
+            <figure class="artwork-card" data-category="posters">
+              <a class="artwork-link" href="assets/gallery/32-la-luna-poster.jpeg" data-artwork="assets/gallery/32-la-luna-poster.jpeg" aria-label="Enlarge La Luna">
+                <span class="artwork-file"><span data-artwork-file="assets/gallery/32-la-luna-poster.jpeg">32 / La Luna</span><span aria-hidden="true">↗</span></span>
+                <span class="artwork-thumbnail"><img src="assets/gallery/thumbnails/32-la-luna-poster.jpeg" data-artwork-alt="assets/gallery/32-la-luna-poster.jpeg" alt="A surreal black, white and red poster with a radiant face, draped figures and the words La Luna." width="1757" height="2600" loading="lazy" decoding="async"></span>
+              </a>
+              <figcaption><h2 data-artwork-title="assets/gallery/32-la-luna-poster.jpeg">La Luna</h2><span data-artwork-category="assets/gallery/32-la-luna-poster.jpeg">Posters</span></figcaption>
             </figure>
             <!-- GALLERY:END -->
           </div>
@@ -284,7 +462,7 @@
           <article class="content-window rate-card" aria-labelledby="headshot-title">
             <div class="window-title"><span data-i18n="commissions.headshotFile">01 / headshot.art</span><span aria-hidden="true">✧</span></div>
             <div class="framing-guide" aria-hidden="true"><svg viewBox="0 0 120 160"><use href="#framing-person"/><rect x="27" y="5" width="66" height="57" rx="3"/></svg><span data-i18n="commissions.guide">Framing guide</span></div>
-            <div class="rate-content"><h3 id="headshot-title" data-i18n="commissions.headshot">Headshot</h3><p data-i18n="commissions.headshotDescription">Face and shoulders, with the focus on expression and details.</p><table class="price-table"><caption class="sr-only" data-i18n="commissions.headshotPrices">Headshot prices</caption><thead><tr><th scope="col" data-i18n="commissions.finish">Finish</th><th scope="col" data-i18n="commissions.price">Price</th></tr></thead><tbody><tr><th scope="row" data-i18n="commissions.simple">Simple shading</th><td data-rate="headshot.simple" data-i18n="commissions.unconfirmed">$10.00</td></tr><tr><th scope="row" data-i18n="commissions.full">Full shading</th><td data-rate="headshot.full" data-i18n="commissions.unconfirmed">$25.00</td></tr><tr><th scope="row" data-i18n="commissions.backgroundAddon">Background add-on</th><td data-rate="headshot.background" data-i18n="commissions.unconfirmed">+$10.00</td></tr></tbody></table></div>
+            <div class="rate-content"><h3 id="headshot-title" data-i18n="commissions.headshot">Headshot</h3><p data-i18n="commissions.headshotDescription">Face and shoulders, with the focus on expression and details.</p><table class="price-table"><caption class="sr-only" data-i18n="commissions.headshotPrices">Headshot prices</caption><thead><tr><th scope="col" data-i18n="commissions.finish">Finish</th><th scope="col" data-i18n="commissions.price">Price</th></tr></thead><tbody><tr><th scope="row" data-i18n="commissions.simple">Simple shading</th><td data-rate="headshot.simple" data-i18n="commissions.unconfirmed">$15.00</td></tr><tr><th scope="row" data-i18n="commissions.full">Full shading</th><td data-rate="headshot.full" data-i18n="commissions.unconfirmed">$25.00</td></tr><tr><th scope="row" data-i18n="commissions.backgroundAddon">Background add-on</th><td data-rate="headshot.background" data-i18n="commissions.unconfirmed">+$10.00</td></tr></tbody></table></div>
           </article>
           <article class="content-window rate-card" aria-labelledby="halfbody-title">
             <div class="window-title"><span data-i18n="commissions.halfBodyFile">02 / half_body.art</span><span aria-hidden="true">✧</span></div>
@@ -305,9 +483,9 @@
         <p class="section-description" data-i18n="commissions.examplesDescription">A few drawings from the portfolio. Specific examples for each framing and shading tier will be added here.</p>
         <div class="commission-examples">
           <!-- EXAMPLES:START -->
-          <figure><a href="assets/gallery/01-floral-portrait.jpeg" data-artwork="assets/gallery/01-floral-portrait.jpeg" aria-label="Enlarge Floral portrait"><img src="assets/gallery/01-floral-portrait.jpeg" data-artwork-alt="assets/gallery/01-floral-portrait.jpeg" alt="A character&#39;s face framed by red flowers, green foliage, and a patterned white veil." width="1280" height="1280" loading="lazy"><span aria-hidden="true">↗</span></a><figcaption><strong data-artwork-title="assets/gallery/01-floral-portrait.jpeg">Floral portrait</strong> <span data-artwork-sample="assets/gallery/01-floral-portrait.jpeg">Portraits · portfolio sample</span></figcaption></figure>
-          <figure><a href="assets/gallery/04-green-haired-character.jpeg" data-artwork="assets/gallery/04-green-haired-character.jpeg" aria-label="Enlarge Green-haired character"><img src="assets/gallery/04-green-haired-character.jpeg" data-artwork-alt="assets/gallery/04-green-haired-character.jpeg" alt="A green-haired character with purple bat-wing accessories and white feathers on a black outfit." width="740" height="1600" loading="lazy"><span aria-hidden="true">↗</span></a><figcaption><strong data-artwork-title="assets/gallery/04-green-haired-character.jpeg">Green-haired character</strong> <span data-artwork-sample="assets/gallery/04-green-haired-character.jpeg">Illustrations · portfolio sample</span></figcaption></figure>
-          <figure><a href="assets/gallery/03-bunny-character.jpeg" data-artwork="assets/gallery/03-bunny-character.jpeg" aria-label="Enlarge Pink-haired character"><img src="assets/gallery/03-bunny-character.jpeg" data-artwork-alt="assets/gallery/03-bunny-character.jpeg" alt="A pink-haired character wearing black bunny ears, black gloves, and a red outfit." width="1130" height="1600" loading="lazy"><span aria-hidden="true">↗</span></a><figcaption><strong data-artwork-title="assets/gallery/03-bunny-character.jpeg">Pink-haired character</strong> <span data-artwork-sample="assets/gallery/03-bunny-character.jpeg">Illustrations · portfolio sample</span></figcaption></figure>
+          <figure><a href="assets/gallery/01-floral-portrait.jpeg" data-artwork="assets/gallery/01-floral-portrait.jpeg" aria-label="Enlarge Floral portrait"><img src="assets/gallery/thumbnails/01-floral-portrait.jpeg" data-artwork-alt="assets/gallery/01-floral-portrait.jpeg" alt="A character&#39;s face framed by red flowers, green foliage, and a patterned white veil." width="1280" height="1280" loading="lazy"><span aria-hidden="true">↗</span></a><figcaption><strong data-artwork-title="assets/gallery/01-floral-portrait.jpeg">Floral portrait</strong> <span data-artwork-sample="assets/gallery/01-floral-portrait.jpeg">Portraits · portfolio sample</span></figcaption></figure>
+          <figure><a href="assets/gallery/04-green-haired-character.jpeg" data-artwork="assets/gallery/04-green-haired-character.jpeg" aria-label="Enlarge Green-haired character"><img src="assets/gallery/thumbnails/04-green-haired-character.jpeg" data-artwork-alt="assets/gallery/04-green-haired-character.jpeg" alt="A green-haired character with purple bat-wing accessories and feather trim, beside a blurred portrait background." width="1950" height="2600" loading="lazy"><span aria-hidden="true">↗</span></a><figcaption><strong data-artwork-title="assets/gallery/04-green-haired-character.jpeg">Green-haired character</strong> <span data-artwork-sample="assets/gallery/04-green-haired-character.jpeg">Illustrations · portfolio sample</span></figcaption></figure>
+          <figure><a href="assets/gallery/03-bunny-character.jpeg" data-artwork="assets/gallery/03-bunny-character.jpeg" aria-label="Enlarge Pink-haired character"><img src="assets/gallery/thumbnails/03-bunny-character.jpeg" data-artwork-alt="assets/gallery/03-bunny-character.jpeg" alt="A pink-haired character with bunny ears, black gloves and a glossy red outfit against red curtains." width="1950" height="2600" loading="lazy"><span aria-hidden="true">↗</span></a><figcaption><strong data-artwork-title="assets/gallery/03-bunny-character.jpeg">Pink-haired character</strong> <span data-artwork-sample="assets/gallery/03-bunny-character.jpeg">Illustrations · portfolio sample</span></figcaption></figure>
           <!-- EXAMPLES:END -->
         </div>
         <div class="section-heading"><h2 data-i18n="commissions.ideaToArt">From idea to illustration</h2><span data-i18n="commissions.processNumber">03 / The process</span></div>

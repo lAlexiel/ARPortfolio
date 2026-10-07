@@ -131,8 +131,8 @@ test('the language switch translates every view, rich Terms, metadata, and the o
   assert.equal(f.nodes['lightbox-title'].textContent, gallery[2].titleEs);
   assert.equal(f.nodes['lightbox-image'].alt, gallery[2].altEs);
   assert.equal(f.artLinks[0].attributes['aria-label'], 'Ampliar Retrato uno');
-  assert.equal(f.artTargets.category[0].textContent, 'Retratos');
-  assert.equal(f.artTargets.sample[0].textContent, 'Retratos · muestra del portafolio');
+  assert.equal(f.artTargets.category[0].textContent, translations.es['gallery.portraits']);
+  assert.equal(f.artTargets.sample[0].textContent, translations.es['commissions.sample'].replace('{category}', translations.es['gallery.portraits']));
   assert.equal(f.artTargets.alt[0].attributes.alt, 'Primer retrato');
   assert.ok(f.rates.every(cell => cell.textContent === 'Por confirmar'));
   for (const target of f.textTargets) assert.equal(target.textContent, translations.es[target.dataset.i18n]);

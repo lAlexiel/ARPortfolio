@@ -3,11 +3,12 @@
 ## Image folders
 
 - `assets/gallery/`: the drawings shown in Gallery. Add numbered filenames such as `08.jpg`, `09-new-character.png`, or `10.webp`. The number sets the order. Supported formats: JPG, JPEG, PNG, WebP, GIF, and AVIF. Unnumbered files are ignored. Deleting a drawing removes it from Gallery after the next publication.
+- `assets/gallery/thumbnails/`: smaller previews that help the gallery load quickly on phones. These are not separate gallery entries. Optional `thumbnail` metadata points to a filename in this folder; without it, the gallery uses the drawing itself. When replacing an artwork, update its thumbnail too, or remove the `thumbnail` field to use the full image.
 - `assets/`: Home artwork (`floral-portrait.jpg`, `strawberry-portrait.jpg`), the signature (`signature.jpg`), and decorative assets. These are separate from Gallery: adding a drawing to Gallery does not replace the two Home pictures. Keep these filenames when replacing Home artwork.
 - `assets/fonts/`: the website font and its license. This is not a drawing folder.
 - `docs/`: documentation and the screenshot displayed in the GitHub README. Images here do not appear in Gallery.
 
-Optional drawing titles and descriptions go in `content/gallery-meta.json`, using the exact image filename as the key. `title` and `alt` are English; `titleEs` and `altEs` are Spanish. `category` can be `Portraits` or `Illustrations`. Without metadata, a new drawing gets a numbered title automatically.
+Optional drawing titles and descriptions go in `content/gallery-meta.json`, using the exact image filename as the key. `title` and `alt` are English; `titleEs` and `altEs` are Spanish. `category` can be `Portraits` (color portraits), `Illustrations` (character illustrations), `Monochrome` (ink and monochrome), `Sketches` (sketches and line art), or `Posters` (posters and graphic artwork). Without metadata, a new drawing gets a numbered title automatically. `sourceName`, when present, records its original Drive filename for your reference.
 
 ## Terms of Service
 

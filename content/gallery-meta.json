@@ -4,48 +4,286 @@
     "category": "Portraits",
     "alt": "A character's face framed by red flowers, green foliage, and a patterned white veil.",
     "titleEs": "Retrato floral",
-    "altEs": "Rostro de un personaje rodeado de flores rojas, follaje verde y un velo blanco estampado."
+    "altEs": "Rostro de un personaje rodeado de flores rojas, follaje verde y un velo blanco estampado.",
+    "thumbnail": "01-floral-portrait.jpeg"
   },
   "02-strawberry-portrait.jpeg": {
     "title": "Strawberry daydream",
-    "category": "Portraits",
-    "alt": "A blonde character with a pink star, blue nose bandage, and a strawberry.",
     "titleEs": "Ensueño de fresa",
-    "altEs": "Un personaje rubio con una estrella rosa, una curita azul en la nariz y una fresa."
+    "category": "Portraits",
+    "alt": "A blonde portrait with a strawberry, pink star, blue nose bandage and a blue chain-patterned background.",
+    "altEs": "Retrato rubio con una fresa, estrella rosa, curita azul y un fondo de cadenas azules.",
+    "thumbnail": "02-strawberry-portrait.jpeg",
+    "sourceName": "24 sin título_20260719212213.png"
   },
   "03-bunny-character.jpeg": {
     "title": "Pink-haired character",
-    "category": "Illustrations",
-    "alt": "A pink-haired character wearing black bunny ears, black gloves, and a red outfit.",
     "titleEs": "Personaje de cabello rosa",
-    "altEs": "Un personaje de cabello rosa con orejas negras de conejo, guantes negros y un atuendo rojo."
+    "category": "Illustrations",
+    "alt": "A pink-haired character with bunny ears, black gloves and a glossy red outfit against red curtains.",
+    "altEs": "Personaje de cabello rosa con orejas de conejo, guantes negros y un atuendo rojo brillante frente a cortinas rojas.",
+    "thumbnail": "03-bunny-character.jpeg",
+    "sourceName": "22 sin título_20260719205614.png"
   },
   "04-green-haired-character.jpeg": {
     "title": "Green-haired character",
-    "category": "Illustrations",
-    "alt": "A green-haired character with purple bat-wing accessories and white feathers on a black outfit.",
     "titleEs": "Personaje de cabello verde",
-    "altEs": "Un personaje de cabello verde con accesorios de alas de murciélago moradas y plumas blancas sobre un atuendo negro."
+    "category": "Illustrations",
+    "alt": "A green-haired character with purple bat-wing accessories and feather trim, beside a blurred portrait background.",
+    "altEs": "Personaje de cabello verde con accesorios de alas moradas y ribetes de plumas, junto a un retrato desenfocado de fondo.",
+    "thumbnail": "04-green-haired-character.jpeg",
+    "sourceName": "17 sin título_20260719115355.png"
   },
   "05-ruffled-character.jpeg": {
     "title": "Ruffles & ribbons",
-    "category": "Illustrations",
-    "alt": "A character with dark burgundy hair, a ruffled bonnet, pink ribbons, and patterned white stockings.",
     "titleEs": "Volantes y lazos",
-    "altEs": "Un personaje de cabello borgoña oscuro con una cofia de volantes, lazos rosas y medias blancas estampadas."
+    "category": "Illustrations",
+    "alt": "A seated character with burgundy hair, a ruffled bonnet, pink ribbons and white stockings on a lace-patterned background.",
+    "altEs": "Personaje sentado de cabello borgoña con cofia de volantes, lazos rosas y medias blancas sobre un fondo de encaje.",
+    "thumbnail": "05-ruffled-character.jpeg",
+    "sourceName": "18 sin título_20260719195321.png"
   },
-  "06-blonde-portrait.png": {
+  "06-blonde-portrait.jpeg": {
     "title": "Chrome & blue ribbons",
-    "category": "Portraits",
-    "alt": "A blonde character with blue eyes, blue ribbons, and a metallic spiked collar in the artist's original black portrait composition.",
     "titleEs": "Cromo y lazos azules",
-    "altEs": "Un personaje rubio de ojos azules, lazos azules y un collar metálico con púas en la composición negra original de la artista."
+    "category": "Illustrations",
+    "alt": "A blonde character with blue ribbons, a metallic spiked collar and a pale blue outfit against a blue diamond pattern.",
+    "altEs": "Personaje rubio con lazos azules, collar metálico con púas y atuendo azul claro sobre un estampado de rombos azules.",
+    "thumbnail": "06-blonde-portrait.jpeg",
+    "sourceName": "21 sin título_20260719200406.png"
   },
-  "07-cat-portrait.png": {
+  "07-cat-portrait.jpeg": {
     "title": "Cat-inspired portrait",
-    "category": "Portraits",
-    "alt": "A character in a glossy black cat-inspired costume with orange goggles, holding a small purple jewel.",
     "titleEs": "Retrato felino",
-    "altEs": "Un personaje con un traje negro brillante de inspiración felina y gafas naranjas, sosteniendo una pequeña joya morada."
+    "category": "Illustrations",
+    "alt": "A character in a glossy black cat costume and orange goggles, holding a purple jewel in a dark brick passage.",
+    "altEs": "Personaje con traje felino negro brillante y gafas naranjas, sosteniendo una joya morada en un pasillo oscuro de ladrillo.",
+    "thumbnail": "07-cat-portrait.jpeg",
+    "sourceName": "15 sin título_20260719193500.png"
+  },
+  "08-vampirella-character.jpeg": {
+    "title": "Gothic light",
+    "titleEs": "Luz gótica",
+    "category": "Illustrations",
+    "alt": "A black-haired character in a red and white outfit, posed before tall illuminated gothic windows.",
+    "altEs": "Personaje de cabello negro y atuendo rojo y blanco frente a altas ventanas góticas iluminadas.",
+    "thumbnail": "08-vampirella-character.jpeg",
+    "sourceName": "20 sin título_20260719192658.png"
+  },
+  "09-magenta-portrait.jpeg": {
+    "title": "Magenta hearts",
+    "titleEs": "Corazones magenta",
+    "category": "Portraits",
+    "alt": "A dark-haired portrait with magenta highlights, purple hearts and curved pink graphic accents.",
+    "altEs": "Retrato de cabello oscuro con reflejos magenta, corazones morados y detalles gráficos rosas.",
+    "thumbnail": "09-magenta-portrait.jpeg",
+    "sourceName": "Ilustración_sin_título.PNG"
+  },
+  "10-curly-haired-portrait.jpeg": {
+    "title": "Lilac daydream",
+    "titleEs": "Ensueño lila",
+    "category": "Portraits",
+    "alt": "A curly-haired portrait with purple hearts and butterflies on a lilac background with green and purple ribbons.",
+    "altEs": "Retrato de cabello rizado con corazones y mariposas moradas sobre un fondo lila con cintas verdes y moradas.",
+    "thumbnail": "10-curly-haired-portrait.jpeg",
+    "sourceName": "Ilustración_sin_título-1.PNG"
+  },
+  "11-cherry-portrait.jpeg": {
+    "title": "Cherry checkers",
+    "titleEs": "Cerezas y rombos",
+    "category": "Portraits",
+    "alt": "An expressive brown-haired portrait with face decorations and cherries against red, black and cream diamonds.",
+    "altEs": "Retrato expresivo de cabello castaño con adornos en el rostro y cerezas sobre rombos rojos, negros y crema.",
+    "thumbnail": "11-cherry-portrait.jpeg",
+    "sourceName": "26 sin título_20260719215108.png"
+  },
+  "12-candy-portrait.jpeg": {
+    "title": "Sweet violet",
+    "titleEs": "Dulce violeta",
+    "category": "Portraits",
+    "alt": "A black-haired character with glasses and candy against a purple heart-lollipop pattern.",
+    "altEs": "Personaje de cabello negro con gafas y un dulce sobre un estampado morado de paletas de corazón.",
+    "thumbnail": "12-candy-portrait.jpeg",
+    "sourceName": "25 sin título_20260719213606.png"
+  },
+  "13-dark-fantasy-ink.jpeg": {
+    "title": "Dark fantasy",
+    "titleEs": "Fantasía oscura",
+    "category": "Monochrome",
+    "alt": "A surreal ink character with raised arms, layered chains and bat-like wings.",
+    "altEs": "Personaje surrealista a tinta con los brazos elevados, cadenas y alas de murciélago.",
+    "thumbnail": "13-dark-fantasy-ink.jpeg",
+    "sourceName": "318 sin título_20250220110215.jpg"
+  },
+  "14-charcoal-portrait.jpeg": {
+    "title": "Charcoal gaze",
+    "titleEs": "Mirada en carbón",
+    "category": "Monochrome",
+    "alt": "A close-up monochrome portrait with dark hair, soft shading and a direct gaze.",
+    "altEs": "Retrato monocromático de cerca con cabello oscuro, sombreado suave y mirada directa.",
+    "thumbnail": "14-charcoal-portrait.jpeg",
+    "sourceName": "IMG_4050.jpg"
+  },
+  "15-monochrome-character-duo.jpeg": {
+    "title": "Mirrored poses",
+    "titleEs": "Poses reflejadas",
+    "category": "Monochrome",
+    "alt": "Two shaded monochrome characters arranged in opposing upright and inverted poses.",
+    "altEs": "Dos personajes sombreados en blanco y negro, uno de pie y otro invertido.",
+    "thumbnail": "15-monochrome-character-duo.jpeg",
+    "sourceName": "IMG_0217.JPG"
+  },
+  "16-nana-microphone.jpeg": {
+    "title": "Nana · microphone",
+    "titleEs": "Nana · micrófono",
+    "category": "Monochrome",
+    "alt": "A framed black-and-white portrait of Nana holding a microphone, with red lips and nails.",
+    "altEs": "Retrato enmarcado de Nana en blanco y negro, sosteniendo un micrófono, con labios y uñas rojos.",
+    "thumbnail": "16-nana-microphone.jpeg",
+    "sourceName": "Nana cuadro bolsa.PNG"
+  },
+  "17-nana-heart.jpeg": {
+    "title": "Nana · heart",
+    "titleEs": "Nana · corazón",
+    "category": "Monochrome",
+    "alt": "A black-and-white portrait of Nana inside a heart outline with red lips and pink blush.",
+    "altEs": "Retrato de Nana en blanco y negro dentro de un corazón, con labios rojos y rubor rosa.",
+    "thumbnail": "17-nana-heart.jpeg",
+    "sourceName": "Nana corazón bolsa .PNG"
+  },
+  "18-tomie-tears.jpeg": {
+    "title": "Tomie · tears",
+    "titleEs": "Tomie · lágrimas",
+    "category": "Monochrome",
+    "alt": "A close-up ink portrait with straight dark bangs, detailed eyes and tears.",
+    "altEs": "Retrato a tinta de cerca con flequillo oscuro, ojos detallados y lágrimas.",
+    "thumbnail": "18-tomie-tears.jpeg",
+    "sourceName": "Bolsa junji ito 3.PNG"
+  },
+  "19-tomie-side-portrait.jpeg": {
+    "title": "Tomie · sideways glance",
+    "titleEs": "Tomie · mirada de lado",
+    "category": "Monochrome",
+    "alt": "A monochrome face with side-swept hair, long lashes and a sideways glance.",
+    "altEs": "Rostro monocromático con cabello hacia un lado, pestañas largas y mirada lateral.",
+    "thumbnail": "19-tomie-side-portrait.jpeg",
+    "sourceName": "Bolsa junji ito 2.PNG"
+  },
+  "20-tomie-framed-portrait.jpeg": {
+    "title": "Tomie · framed portrait",
+    "titleEs": "Tomie · retrato enmarcado",
+    "category": "Monochrome",
+    "alt": "A framed ink portrait with long dark hair, straight bangs and a three-quarter pose.",
+    "altEs": "Retrato enmarcado a tinta con cabello largo oscuro, flequillo recto y pose de tres cuartos.",
+    "thumbnail": "20-tomie-framed-portrait.jpeg",
+    "sourceName": "Cuadro bolsa junji Ito.PNG"
+  },
+  "21-rose-and-thorns.jpeg": {
+    "title": "Rose & thorns",
+    "titleEs": "Rosa y espinas",
+    "category": "Monochrome",
+    "alt": "A small detailed monochrome portrait with a rose, thorn-like accents and a surreal doubled eye.",
+    "altEs": "Pequeño retrato monocromático detallado con una rosa, espinas y un ojo doble surrealista.",
+    "thumbnail": "21-rose-and-thorns.jpeg",
+    "sourceName": "29 sin título_20260723180651.PNG"
+  },
+  "22-monochrome-hands.jpeg": {
+    "title": "Ink-stained daydream",
+    "titleEs": "Ensueño a tinta",
+    "category": "Monochrome",
+    "alt": "A tall monochrome portrait with dark nails, hands, long hair and tear-like marks.",
+    "altEs": "Retrato monocromático vertical con uñas oscuras, manos, cabello largo y marcas de lágrimas.",
+    "thumbnail": "22-monochrome-hands.jpeg",
+    "sourceName": "29 sin título_20260727162946.png"
+  },
+  "23-dark-red-portrait.jpeg": {
+    "title": "Crimson stare",
+    "titleEs": "Mirada carmesí",
+    "category": "Monochrome",
+    "alt": "A dark portrait with straight bangs, red accents and hands held beneath the face.",
+    "altEs": "Retrato oscuro con flequillo recto, detalles rojos y manos bajo el rostro.",
+    "thumbnail": "23-dark-red-portrait.jpeg",
+    "sourceName": "38 sin título_20260727162210.png"
+  },
+  "24-skull.jpeg": {
+    "title": "Skull",
+    "titleEs": "Cráneo",
+    "category": "Monochrome",
+    "alt": "A detailed monochrome skull drawing with an open jaw and one stylized eye.",
+    "altEs": "Dibujo detallado de un cráneo en blanco y negro con la mandíbula abierta y un ojo estilizado.",
+    "thumbnail": "24-skull.jpeg",
+    "sourceName": "Cráneo"
+  },
+  "25-bat-wing-line-art.jpeg": {
+    "title": "Bat-wing study",
+    "titleEs": "Estudio de alas",
+    "category": "Sketches",
+    "alt": "A clean line-art head with layered hair, bat-wing accessories and floating eye motifs.",
+    "altEs": "Cabeza en arte lineal con cabello en capas, accesorios de alas y motivos de ojos flotantes.",
+    "thumbnail": "25-bat-wing-line-art.jpeg",
+    "sourceName": "IMG_2576.PNG"
+  },
+  "26-horned-character-line-art.jpeg": {
+    "title": "Horned character study",
+    "titleEs": "Estudio de personaje con cuernos",
+    "category": "Sketches",
+    "alt": "A line-art character with horns, layered accessories and one raised hand.",
+    "altEs": "Personaje en arte lineal con cuernos, accesorios y una mano elevada.",
+    "thumbnail": "26-horned-character-line-art.jpeg",
+    "sourceName": "IMG_2791.JPG"
+  },
+  "27-character-pencil-study.jpeg": {
+    "title": "Character pencil study",
+    "titleEs": "Estudio de personaje a lápiz",
+    "category": "Sketches",
+    "alt": "A light pencil character study with long hair, a jacket and a tilted pose.",
+    "altEs": "Estudio suave de personaje a lápiz con cabello largo, chaqueta y pose inclinada.",
+    "thumbnail": "27-character-pencil-study.jpeg",
+    "sourceName": "IMG_3644.jpg"
+  },
+  "28-bunny-line-art.jpeg": {
+    "title": "Bunny line art",
+    "titleEs": "Conejita en arte lineal",
+    "category": "Sketches",
+    "alt": "A seated bunny character in clean line art with long ears, a crown and patterned stockings.",
+    "altEs": "Personaje de conejo sentado en arte lineal, con orejas largas, corona y medias estampadas.",
+    "thumbnail": "28-bunny-line-art.jpeg",
+    "sourceName": "IMG_3699.jpg"
+  },
+  "29-ruffled-portrait-study.jpeg": {
+    "title": "Ruffled portrait study",
+    "titleEs": "Estudio de retrato con volantes",
+    "category": "Sketches",
+    "alt": "A hatched pencil portrait with a ruffled bonnet, long dark hair and a ribbon collar.",
+    "altEs": "Retrato sombreado a lápiz con cofia de volantes, cabello largo oscuro y lazo al cuello.",
+    "thumbnail": "29-ruffled-portrait-study.jpeg",
+    "sourceName": "IMG_3809.jpg"
+  },
+  "30-pencil-portrait-study.jpeg": {
+    "title": "Pencil portrait study",
+    "titleEs": "Estudio de retrato a lápiz",
+    "category": "Sketches",
+    "alt": "A crosshatched pencil face with detailed eyes and a hand crossing the nose.",
+    "altEs": "Rostro a lápiz con sombreado cruzado, ojos detallados y una mano sobre la nariz.",
+    "thumbnail": "30-pencil-portrait-study.jpeg",
+    "sourceName": "IMG_3944.jpg"
+  },
+  "31-manga-panel-poster.jpeg": {
+    "title": "Manga in red",
+    "titleEs": "Manga en rojo",
+    "category": "Posters",
+    "alt": "Three manga-style character panels with red accents over a textured gray background.",
+    "altEs": "Tres paneles de personajes estilo manga con detalles rojos sobre un fondo gris con textura.",
+    "thumbnail": "31-manga-panel-poster.jpeg",
+    "sourceName": "IMG_0267.PNG"
+  },
+  "32-la-luna-poster.jpeg": {
+    "title": "La Luna",
+    "titleEs": "La Luna",
+    "category": "Posters",
+    "alt": "A surreal black, white and red poster with a radiant face, draped figures and the words La Luna.",
+    "altEs": "Póster surrealista en negro, blanco y rojo con un rostro radiante, figuras cubiertas y el texto La Luna.",
+    "thumbnail": "32-la-luna-poster.jpeg",
+    "sourceName": "32 sin título_20260723190437.png"
   }
 }

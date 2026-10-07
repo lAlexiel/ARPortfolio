@@ -36,6 +36,41 @@ test('numbered uploads are discovered, naturally ordered, and safely encoded', a
   }
 });
 
+test('gallery thumbnails stay separate from original links and respect all artwork categories', async () => {
+  const tempBase = path.resolve(os.tmpdir());
+  const root = await mkdtemp(path.join(tempBase, 'angie-gallery-test-'));
+  try {
+    const dir = path.join(root, 'assets', 'gallery');
+    await mkdir(path.join(dir, 'thumbnails'), { recursive: true });
+    const metadata = {};
+    for (const [index, category] of ['Portraits', 'Illustrations', 'Monochrome', 'Sketches', 'Posters'].entries()) {
+      const name = `${index + 1}.jpeg`;
+      const thumbnail = `${index + 1} preview.jpeg`;
+      await writeFile(path.join(dir, name), 'full artwork');
+      await writeFile(path.join(dir, 'thumbnails', thumbnail), 'small preview');
+      metadata[name] = { category, thumbnail };
+    }
+    const works = await buildGallery(root, metadata);
+    assert.equal(works.length, 5, 'Thumbnail files cannot become duplicate gallery entries');
+    assert.deepEqual(works.map(work => work.category), ['Portraits', 'Illustrations', 'Monochrome', 'Sketches', 'Posters']);
+    assert.equal(works[0].thumbnail, 'assets/gallery/thumbnails/1%20preview.jpeg');
+    for (const render of [renderGalleryCard, renderCommissionExample]) {
+      const html = render(works[0]);
+      assert.ok(html.includes('href="assets/gallery/1.jpeg"'), 'Opening an image uses the full artwork');
+      assert.ok(html.includes('<img src="assets/gallery/thumbnails/1%20preview.jpeg"'), 'Cards load the smaller preview');
+    }
+    metadata['1.jpeg'].thumbnail = '../1.jpeg';
+    await assert.rejects(buildGallery(root, metadata), /Invalid thumbnail/);
+    metadata['1.jpeg'].thumbnail = 'missing.jpeg';
+    await assert.rejects(buildGallery(root, metadata), /ENOENT/);
+    delete metadata['1.jpeg'].thumbnail;
+    assert.equal((await buildGallery(root, metadata))[0].thumbnail, 'assets/gallery/1.jpeg', 'Ordinary uploads need no thumbnail');
+  } finally {
+    if (path.dirname(root) !== tempBase || !path.basename(root).startsWith('angie-gallery-test-')) throw Error('Unexpected test cleanup path');
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
 test('commission configuration accepts real data while rejecting unusable rates and links', async () => {
   const initial = structuredClone(commissionFixture);
   assert.equal(validateCommissions(initial).contacts.length, 0);
