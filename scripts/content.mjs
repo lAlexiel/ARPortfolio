@@ -56,6 +56,25 @@ function localizedText(value) {
     && typeof value.en === 'string' && !!value.en.trim() && typeof value.es === 'string' && !!value.es.trim();
 }
 
+export function renderRichText(chunks) {
+  return chunks.map(chunk => typeof chunk === 'string' ? escapeHtml(chunk) : `<strong>${escapeHtml(chunk.strong)}</strong>`).join('');
+}
+
+export function termsTranslations(data) {
+  const result = { en: {}, es: {} };
+  for (const language of ['en', 'es']) {
+    for (const field of ['title', 'waitHeading', 'wait', 'paymentHeading', 'payment', 'copyrightHeading', 'copyright']) {
+      const value = data?.[language]?.[field];
+      const paragraph = ['wait', 'payment', 'copyright'].includes(field);
+      if (!paragraph && (typeof value !== 'string' || !value.trim())) throw Error(`Invalid Terms heading: ${language}.${field}`);
+      const chunks = typeof value === 'string' ? [value] : value;
+      if (paragraph && (!Array.isArray(chunks) || !chunks.length || !chunks.every(chunk => typeof chunk === 'string' || chunk && typeof chunk.strong === 'string' && Object.keys(chunk).length === 1))) throw Error(`Invalid Terms paragraph: ${language}.${field}`);
+      result[language][`terms.${field}`] = paragraph ? chunks : value;
+    }
+  }
+  return result;
+}
+
 export function validateTranslations(translations) {
   if (!translations || !translations.en || !translations.es) throw Error('English and Spanish translations are required');
   const keys = Object.keys(translations.en).sort();

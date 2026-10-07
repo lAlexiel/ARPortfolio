@@ -1,3 +1,4 @@
+import { termsTranslations } from '../scripts/content.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -10,6 +11,9 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const js = fs.readFileSync(path.join(root, 'app.js'), 'utf8');
 const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 const translations = JSON.parse(fs.readFileSync(path.join(root, 'content', 'translations.json'), 'utf8'));
+
+const terms = termsTranslations(JSON.parse(fs.readFileSync(path.join(root, 'content', 'terms.json'), 'utf8')));
+for (const language of ['en', 'es']) Object.assign(translations[language], terms[language]);
 
 function fixture(hash = '#home', options = {}) {
   const listeners = target => {

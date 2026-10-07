@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdtemp, mkdir, writeFile, rm, readFile } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
-import { buildGallery, renderGalleryCard, renderCommissionExample, validateCommissions, validateTranslations } from '../scripts/content.mjs';
+import { buildGallery, renderGalleryCard, renderCommissionExample, validateCommissions, validateTranslations, termsTranslations } from '../scripts/content.mjs';
 import { commissionFixture } from './fixtures.mjs';
 
 test('numbered uploads are discovered, naturally ordered, and safely encoded', async () => {
@@ -71,6 +71,8 @@ test('commission configuration accepts real data while rejecting unusable rates 
 test('both languages cover all source annotations, preserve English Terms, and reject incomplete messages', async () => {
   const html = await readFile(new URL('../index.html', import.meta.url), 'utf8');
   const translations = JSON.parse(await readFile(new URL('../content/translations.json', import.meta.url), 'utf8'));
+  const terms = termsTranslations(JSON.parse(await readFile(new URL('../content/terms.json', import.meta.url), 'utf8')));
+  for (const language of ['en', 'es']) Object.assign(translations[language], terms[language]);
   validateTranslations(translations);
   for (const [, key] of html.matchAll(/\bdata-i18n(?:-rich|-aria-label|-alt|-content)?="([^"]+)"/g)) {
     assert.ok(Object.hasOwn(translations.en, key), `Missing English: ${key}`);

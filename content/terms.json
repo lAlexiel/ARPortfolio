@@ -1,0 +1,190 @@
+{
+  "en": {
+    "title": "☆ TERMS OF SERVICE ☆",
+    "waitHeading": "-WAIT TIME-",
+    "wait": [
+      "It may take 1 day to process your order, but the wait time after is from 3-4 days. With extra revisions, the time may increase.Usually the commission finish time is a month, but can increase with negotiations (please tell beforehand if there is a deadline)"
+    ],
+    "paymentHeading": "-TRANSACTION / PAYMENT-",
+    "payment": [
+      "・50/50 transaction. ",
+      {
+        "strong": "50%"
+      },
+      " after ",
+      {
+        "strong": "confirmation"
+      },
+      " that the illustration is gonna be made, and ",
+      {
+        "strong": "50%"
+      },
+      " after I have ",
+      {
+        "strong": "finished"
+      },
+      " it.・For the sake of not getting scammed, I will send a very ",
+      {
+        "strong": "censored"
+      },
+      " sample to show the art is ready, and I will not send the ",
+      {
+        "strong": "uncensored"
+      },
+      " picture until you have sent the ",
+      {
+        "strong": "remaining 50%"
+      },
+      ".・This system makes sure that both the ",
+      {
+        "strong": "artist and patron"
+      },
+      " are not getting ",
+      {
+        "strong": "cheated"
+      },
+      ".・Revisions after a completed piece will be ",
+      {
+        "strong": "priced"
+      },
+      ".The payment will be through ",
+      {
+        "strong": "PayPal"
+      },
+      "."
+    ],
+    "copyrightHeading": "-COPYRIGHT POLICY-",
+    "copyright": [
+      "・All commissioned art will hold my ",
+      {
+        "strong": "signature"
+      },
+      ".・My signature shall ",
+      {
+        "strong": "not be removed"
+      },
+      ".・The art ",
+      {
+        "strong": "cannot be resold"
+      },
+      ", ",
+      {
+        "strong": "printed"
+      },
+      " or any ",
+      {
+        "strong": "profit"
+      },
+      " being made off of it unless ",
+      {
+        "strong": "I state"
+      },
+      " it is ",
+      {
+        "strong": "okay"
+      },
+      " ( the price will ",
+      {
+        "strong": "change"
+      },
+      " then).・The commissions may be on my ",
+      {
+        "strong": "portfolio"
+      }
+    ]
+  },
+  "es": {
+    "title": "☆ TÉRMINOS DEL SERVICIO ☆",
+    "waitHeading": "-TIEMPO DE ESPERA-",
+    "wait": [
+      "Puede tomar 1 día procesar tu pedido, pero el tiempo de espera posterior es de 3 a 4 días. Con revisiones adicionales, el tiempo puede aumentar. Normalmente, una comisión se termina en un mes, pero este plazo puede aumentar según lo acordado (avisa de antemano si hay una fecha límite)."
+    ],
+    "paymentHeading": "-TRANSACCIÓN / PAGO-",
+    "payment": [
+      "・Transacción 50/50. ",
+      {
+        "strong": "50%"
+      },
+      " después de la ",
+      {
+        "strong": "confirmación"
+      },
+      " de que se realizará la ilustración, y ",
+      {
+        "strong": "50%"
+      },
+      " después de haberla ",
+      {
+        "strong": "terminado"
+      },
+      ".・Para evitar estafas, enviaré una muestra muy ",
+      {
+        "strong": "censurada"
+      },
+      " para demostrar que la obra está lista, y no enviaré la imagen ",
+      {
+        "strong": "sin censura"
+      },
+      " hasta que hayas pagado el ",
+      {
+        "strong": "50% restante"
+      },
+      ".・Este sistema garantiza que tanto la ",
+      {
+        "strong": "artista como el cliente"
+      },
+      " no sufran ",
+      {
+        "strong": "estafas"
+      },
+      ".・Las revisiones de una obra terminada ",
+      {
+        "strong": "tendrán un costo"
+      },
+      ". El pago se realizará a través de ",
+      {
+        "strong": "PayPal"
+      },
+      "."
+    ],
+    "copyrightHeading": "-POLÍTICA DE DERECHOS DE AUTOR-",
+    "copyright": [
+      "・Todas las obras realizadas por encargo llevarán mi ",
+      {
+        "strong": "firma"
+      },
+      ".・Mi firma ",
+      {
+        "strong": "no debe eliminarse"
+      },
+      ".・La obra ",
+      {
+        "strong": "no puede revenderse"
+      },
+      ", ",
+      {
+        "strong": "imprimirse"
+      },
+      " ni utilizarse para obtener ",
+      {
+        "strong": "beneficios económicos"
+      },
+      " salvo que ",
+      {
+        "strong": "yo indique"
+      },
+      " que está ",
+      {
+        "strong": "permitido"
+      },
+      " (en ese caso, el precio ",
+      {
+        "strong": "cambiará"
+      },
+      ").・Las comisiones pueden aparecer en mi ",
+      {
+        "strong": "portafolio"
+      }
+    ]
+  }
+}

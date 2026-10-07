@@ -2,7 +2,7 @@ import { readFile, writeFile, mkdir, cp } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
-import { buildGallery, renderGalleryCard, renderCommissionExample, renderSocialButtons, validateCommissions, validateTranslations } from './content.mjs';
+import { buildGallery, renderGalleryCard, renderCommissionExample, renderSocialButtons, validateCommissions, validateTranslations, termsTranslations, renderRichText } from './content.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2);
@@ -12,9 +12,14 @@ const relative = path.relative(root, output);
 if (relative.startsWith('..') || path.isAbsolute(relative) || relative.startsWith('assets') || relative.startsWith('content') || relative.startsWith('scripts') || relative.startsWith('.git')) throw Error('Build output must be the project root or a separate directory inside it');
 const metadata = JSON.parse(await readFile(path.join(root, 'content', 'gallery-meta.json'), 'utf8'));
 const commissions = validateCommissions(JSON.parse(await readFile(path.join(root, 'content', 'commissions.json'), 'utf8')));
-const translations = validateTranslations(JSON.parse(await readFile(path.join(root, 'content', 'translations.json'), 'utf8')));
+const translations = JSON.parse(await readFile(path.join(root, 'content', 'translations.json'), 'utf8'));
+const terms = termsTranslations(JSON.parse(await readFile(path.join(root, 'content', 'terms.json'), 'utf8')));
+for (const language of ['en', 'es']) Object.assign(translations[language], terms[language]);
+validateTranslations(translations);
 const gallery = await buildGallery(root, metadata);
 let html = await readFile(path.join(root, 'index.html'), 'utf8');
+html = html.replace(/(<em data-i18n-rich="(terms\.[^"]+)">)[\s\S]*?(<\/em>)/g, (_, open, key, close) => open + renderRichText(translations.en[key]) + close);
+html = html.replace(/(<em data-i18n="(terms\.[^"]+)">)[\s\S]*?(<\/em>)/g, (_, open, key, close) => open + renderRichText([translations.en[key]]) + close);
 const socialMarker = /<!-- SOCIAL:START -->[\s\S]*?<!-- SOCIAL:END -->/g;
 if ([...html.matchAll(socialMarker)].length !== 2) throw Error('Home and Commission Info social button markers are missing');
 html = html.replace(socialMarker, () => `<!-- SOCIAL:START -->\n${renderSocialButtons(commissions.socialLinks)}\n              <!-- SOCIAL:END -->`);
@@ -30,12 +35,12 @@ html = html.replace(exampleMarker, () => `<!-- EXAMPLES:START -->\n${samples.map
 html = html.replace(/(<span id="gallery-count"[^>]*>)[\s\S]*?(<\/span>)/, `$1${gallery.length} ${gallery.length === 1 ? 'work' : 'works'}$2`);
 const generated = JSON.stringify({ gallery, commissions, translations }).replace(/</g, '\\u003c').replace(/\u2028/g, '\\u2028').replace(/\u2029/g, '\\u2029');
 const hash = value => createHash('sha256').update(value).digest('hex').slice(0, 12);
-const versions = Object.fromEntries(await Promise.all(['styles.css', 'views.css', 'app.js', 'windows.js'].map(async filename => [filename, hash(await readFile(path.join(root, filename)))])));
+const versions = Object.fromEntries(await Promise.all(['styles.css', 'views.css', 'themes.css', 'theme.js', 'app.js', 'windows.js'].map(async filename => [filename, hash(await readFile(path.join(root, filename)))])));
 versions['content-data.js'] = hash(generated);
-html = html.replace(/(src|href)="(styles\.css|views\.css|app\.js|windows\.js|content-data\.js)(?:\?[^\"]*)?"/g, (match, attribute, filename) => `${attribute}="${filename}?v=${versions[filename]}"`);
+html = html.replace(/(src|href)="(styles\.css|views\.css|themes\.css|theme\.js|app\.js|windows\.js|content-data\.js)(?:\?[^\"]*)?"/g, (match, attribute, filename) => `${attribute}="${filename}?v=${versions[filename]}"`);
 await mkdir(output, { recursive: true });
 if (output !== root) {
-  for (const filename of ['styles.css', 'views.css', 'app.js', 'windows.js']) await cp(path.join(root, filename), path.join(output, filename));
+  for (const filename of ['styles.css', 'views.css', 'themes.css', 'theme.js', 'app.js', 'windows.js']) await cp(path.join(root, filename), path.join(output, filename));
   await cp(path.join(root, 'assets'), path.join(output, 'assets'), { recursive: true });
 }
 await writeFile(path.join(output, 'index.html'), html, 'utf8');
