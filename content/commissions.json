@@ -1,0 +1,15 @@
+{
+  "currency": "",
+  "contacts": [],
+  "socialLinks": { "instagram": "https://www.instagram.com/r.ougx/", "x": "https://x.com/AngieReygadas", "paypal": null },
+  "examples": ["01-floral-portrait.jpeg", "04-green-haired-character.jpeg", "03-bunny-character.jpeg"],
+  "rates": {
+    "headshot": { "simple": null, "full": null, "background": null },
+    "halfBody": { "simple": null, "full": null, "background": null },
+    "fullBody": { "simple": null, "full": null, "background": null },
+    "background": { "simple": null, "full": null },
+    "extras": { "additionalCharacter": null, "detailedBackground": null }
+  },
+  "acceptedSubjects": [],
+  "declinedSubjects": []
+}

@@ -1,0 +1,51 @@
+{
+  "01-floral-portrait.jpeg": {
+    "title": "Floral portrait",
+    "category": "Portraits",
+    "alt": "A character's face framed by red flowers, green foliage, and a patterned white veil.",
+    "titleEs": "Retrato floral",
+    "altEs": "Rostro de un personaje rodeado de flores rojas, follaje verde y un velo blanco estampado."
+  },
+  "02-strawberry-portrait.jpeg": {
+    "title": "Strawberry daydream",
+    "category": "Portraits",
+    "alt": "A blonde character with a pink star, blue nose bandage, and a strawberry.",
+    "titleEs": "Ensueño de fresa",
+    "altEs": "Un personaje rubio con una estrella rosa, una curita azul en la nariz y una fresa."
+  },
+  "03-bunny-character.jpeg": {
+    "title": "Pink-haired character",
+    "category": "Illustrations",
+    "alt": "A pink-haired character wearing black bunny ears, black gloves, and a red outfit.",
+    "titleEs": "Personaje de cabello rosa",
+    "altEs": "Un personaje de cabello rosa con orejas negras de conejo, guantes negros y un atuendo rojo."
+  },
+  "04-green-haired-character.jpeg": {
+    "title": "Green-haired character",
+    "category": "Illustrations",
+    "alt": "A green-haired character with purple bat-wing accessories and white feathers on a black outfit.",
+    "titleEs": "Personaje de cabello verde",
+    "altEs": "Un personaje de cabello verde con accesorios de alas de murciélago moradas y plumas blancas sobre un atuendo negro."
+  },
+  "05-ruffled-character.jpeg": {
+    "title": "Ruffles & ribbons",
+    "category": "Illustrations",
+    "alt": "A character with dark burgundy hair, a ruffled bonnet, pink ribbons, and patterned white stockings.",
+    "titleEs": "Volantes y lazos",
+    "altEs": "Un personaje de cabello borgoña oscuro con una cofia de volantes, lazos rosas y medias blancas estampadas."
+  },
+  "06-blonde-portrait.png": {
+    "title": "Chrome & blue ribbons",
+    "category": "Portraits",
+    "alt": "A blonde character with blue eyes, blue ribbons, and a metallic spiked collar in the artist's original black portrait composition.",
+    "titleEs": "Cromo y lazos azules",
+    "altEs": "Un personaje rubio de ojos azules, lazos azules y un collar metálico con púas en la composición negra original de la artista."
+  },
+  "07-cat-portrait.png": {
+    "title": "Cat-inspired portrait",
+    "category": "Portraits",
+    "alt": "A character in a glossy black cat-inspired costume with orange goggles, holding a small purple jewel.",
+    "titleEs": "Retrato felino",
+    "altEs": "Un personaje con un traje negro brillante de inspiración felina y gafas naranjas, sosteniendo una pequeña joya morada."
+  }
+}
